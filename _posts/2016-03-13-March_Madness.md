@@ -9,6 +9,8 @@ comments: false
 
 ![_config.yml]({{ site.baseurl }}/images/MarchMadness.jpg)
 
+## March Madness Application How-to
+
 For those of you that love filling out NCAA brackets. I spent a little time developing an application, that allows you to compare teams in the tournament this year. This application has all of the data for the teams in the tournament and will allow you to cross-compare teams. 
 
 You can compare teams based on multiple different stats, you can look at individual players on a team or compare the team as a whole. 
@@ -18,3 +20,19 @@ The application provides data in the form of plots as well as tables. Additional
 TLDR: Use this application to fill out your NCAA bracket. 
 
 Link: [NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)
+
+
+## Source Code
+
+Source Code: [github](https://github.com/meysubb/NCAAB_Scrapper_2016).
+
+### Data Scraping/Cleaning
+
+Data was scraped using python. Rodrigo Zamith provided python code online to scrape basketball data from the NCAA website. The last time his code was updated was in 2013. Some formats have changed since Rodrigo recently made this python code. The hyperlink formats have changed so I edited them for that as well as emphasizing the parser to use in Beautiful Soup.
+
+I also added R code to clean up the data. Some of the R code was taken from Rodrigo's old R code. I have updated it for some other new stats like AST/TO ratio, and PER. Unfortunately, to calculate PER you need to account for pace through the accounting of possesions. I was not able to find possession stats on the NCAA website. I also aimed to make the code a bit more efficient, used sapply and apply in general instead of for loops. I hope this helps.
+
+
+### Application Development 
+
+The application was developed using the [shiny](http://shiny.rstudio.com/) package on R. The code for the shiny application is not currently up on github. Look for it to be up soon. 
