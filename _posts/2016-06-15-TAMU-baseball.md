@@ -7,6 +7,6 @@ tags: [college baseball, R, python]
 comments: false
 ---
 
-![_config.yml]({{ site.baseurl }}/images/Blue_Bell_PIc_2.jpg)
+![_config.yml]({{ site.baseurl }}/images/Blue_Bell_Pic_2.jpg)
 
 Analysis on Texas A&M Baseball 2015-2016 season to follow. 
