@@ -11,7 +11,9 @@ comments: false
 
 ## March Madness Application How-to
 
-For those of you that love filling out NCAA brackets. I spent a little time developing an application, that allows you to compare teams in the tournament this year. This application has all of the data for the teams in the tournament and will allow you to cross-compare teams. 
+For those of you that love filling out NCAA brackets, have you ever struggled to fill out a bracket? Unless you religiously watch college basketball, there is a high chance that you have not seen every team play. It is even more difficult to continuoulsy compare stats between set matchups and potential matchups. 
+
+I wanted to avoid constatly jumping from website to website. So I went ahead and spent a little time developing an application, that allows team-team comparision for the tournament this year. This application has all of the data for the teams in the tournament and will allow you to cross-compare teams and players.  
 
 You can compare teams based on multiple different stats, you can look at individual players on a team or compare the team as a whole. 
 
