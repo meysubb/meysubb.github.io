@@ -17,4 +17,4 @@ The application provides data in the form of plots as well as tables. Additional
 
 TLDR: Use this application to fill out your NCAA bracket. 
 
-Link: https://meysubb.shinyapps.io/NCAAB/
+Link: [NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)
