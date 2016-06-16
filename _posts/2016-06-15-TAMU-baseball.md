@@ -42,4 +42,4 @@ INSERT TEXT
 
 ![_config.yml]({{ site.baseurl }}/images/wOBA_Player.png)
 
-![_config.yml]({{ site.baseurl }}/images/)Hit_Distribution.png)
+![_config.yml]({{ site.baseurl }}/images/Hit_Distribution.png)
