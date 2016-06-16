@@ -10,3 +10,36 @@ comments: false
 ![_config.yml]({{ site.baseurl }}/images/Blue_Bell_Pic_2.jpg)
 
 Analysis on Texas A&M Baseball 2015-2016 season to follow. 
+
+# College Baseball 
+
+So if any of you have kept up with college baseball this year
+
+
+## SEC Dominance 
+
+INSERT TEXT
+
+## Plate Discpline 
+
+![_config.yml]({{ site.baseurl }}/images/Top25_PD_OneLine.png)
+
+![_config.yml]({{ site.baseurl }}/images/SEC_PD_Two_Lines.png)
+
+INSERT TEXT
+
+## Run Production 
+
+INSERT TEXT
+
+![_config.yml]({{ site.baseurl }}/images/Run_Prod.png)
+
+![_config.yml]({{ site.baseurl }}/images/SEC_Run_Production.png)
+
+## Sabermetrics 
+
+INSERT TEXT
+
+![_config.yml]({{ site.baseurl }}/images/wOBA_Player.png)
+
+![_config.yml]({{ site.baseurl }}/images/)Hit_Distribution.png)
