@@ -22,7 +22,7 @@ INSERT TEXT
 
 ## Plate Discpline 
 
-![_config.yml]({{ site.baseurl }}/images/Top25_PD_OneLine.png)
+![_config.yml]({{ site.baseurl }}/images/Top25_PD_Two_Lines.png)
 
 ![_config.yml]({{ site.baseurl }}/images/SEC_PD_Two_Lines.png)
 
