@@ -43,3 +43,9 @@ INSERT TEXT
 ![_config.yml]({{ site.baseurl }}/images/wOBA_Player.png)
 
 ![_config.yml]({{ site.baseurl }}/images/Hit_Distribution.png)
+
+![_config.yml]({{ site.baseurl }}/images/Player_BABIP.png)
+
+![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
+
+![_config.yml]({{ site.baseurl }}/images/Bottom_Half.png)
