@@ -44,7 +44,9 @@ INSERT TEXT
 
 ![_config.yml]({{ site.baseurl }}/images/Hit_Distribution.png)
 
-![_config.yml]({{ site.baseurl }}/images/Player_BABIP.png)
+![_config.yml]({{ site.baseurl }}/images/All_Player_BABIP.png)
+
+![_config.yml]({{ site.baseurl }}/images/MLB_Player_BABIP.png)
 
 ![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
 
