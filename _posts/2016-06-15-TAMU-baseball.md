@@ -54,3 +54,4 @@ INSERT TEXT
 
 ![_config.yml]({{ site.baseurl }}/images/MLB_DRAFT.png)
 
+![_config.yml]({{ site.baseurl }}/images/MLB_Player_BABIP.png)
