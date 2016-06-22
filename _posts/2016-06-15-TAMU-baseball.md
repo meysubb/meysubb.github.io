@@ -46,8 +46,11 @@ INSERT TEXT
 
 ![_config.yml]({{ site.baseurl }}/images/All_Player_BABIP.png)
 
-![_config.yml]({{ site.baseurl }}/images/MLB_Player_BABIP.png)
-
 ![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
 
 ![_config.yml]({{ site.baseurl }}/images/Bottom_Half.png)
+
+## MLB Draft
+
+![_config.yml]({{ site.baseurl }}/images/MLB_DRAFT.png)
+
