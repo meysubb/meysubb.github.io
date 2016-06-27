@@ -20,7 +20,7 @@ So if any of you have kept up with college baseball this year
 
 INSERT TEXT
 
-## Plate Discpline 
+## Plate Discipline 
 
 ![_config.yml]({{ site.baseurl }}/images/Top25_PD_Two_Lines.png)
 
