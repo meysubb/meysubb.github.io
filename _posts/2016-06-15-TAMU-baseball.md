@@ -66,7 +66,7 @@ A more visual approach to wOBA would be to breakdown the percentage of hit types
 
 Interestingly enough, the Aggies have higher percentages in all hit types, with the exception of walks and hit by pitch. This also helps explain why the majority of Aggies have a low walk percentage (as seen in the plate discipline plots). Seeing as the Aggies have a high percentage of singles comparatively, they should have a high BABIP (Batting Average on Balls In Play). 
 
-<center> ![_config.yml]({{ site.baseurl }}/images/BABIP.png) </center>
+![_config.yml]({{ site.baseurl }}/images/BABIP.png){: .center-image }
 
 ![_config.yml]({{ site.baseurl }}/images/All_Player_BABIP.png)
 
@@ -74,7 +74,7 @@ The dashed lines represent one standard deviation above and below the national a
 
 In the following tables, we have summarized some statistics. The most recent addition is the wRAA. wRAA (insert Fangraphs link) is the weighted runs above average, it measures the number of offensive runs a player contributes to their team compared to the average player. The equation to find wRAA is: 
 
-<center> ![_config.yml]({{ site.baseurl }}/images/wRAA.png) </center>
+![_config.yml]({{ site.baseurl }}/images/wRAA.png){: .center-image }
 
 ![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
 
