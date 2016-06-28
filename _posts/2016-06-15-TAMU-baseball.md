@@ -7,9 +7,10 @@ tags: [college baseball, R, python]
 comments: false
 ---
 
+<center> Analysis on Texas A&M Baseball 2015-2016 season to follow. </center>
+
 ![_config.yml]({{ site.baseurl }}/images/Blue_Bell_Pic_2.jpg)
 
-<center> Analysis on Texas A&M Baseball 2015-2016 season to follow. </center>
 
 In the past, baseball would not have interested me that much, be it professional or college. Needless to say, just like anyone else my interests have shifted over time. I would like to attribute it to a growing number of factors, from having a committee member who loves baseball to an old roommate writing for the Astros blog (SB Nation’s Crawfish boxes, check out his posts especially if you are a fan that belongs to the AL West).  Oh yeah, sadly there is a Yankee’s fan that’s in the mix as well. Luckily, I won’t ever considering cheering for any other team but my beloved Texas Rangers. It also helps to keep up with baseball, when your team is constantly ranked in the Top 25. Gig’Em Ags!
 
@@ -65,7 +66,7 @@ A more visual approach to wOBA would be to breakdown the percentage of hit types
 
 Interestingly enough, the Aggies have higher percentages in all hit types, with the exception of walks and hit by pitch. This also helps explain why the majority of Aggies have a low walk percentage (as seen in the plate discipline plots). Seeing as the Aggies have a high percentage of singles comparatively, they should have a high BABIP (Batting Average on Balls In Play). 
 
-![_config.yml]({{ site.baseurl }}/images/BABIP.png)
+<center> ![_config.yml]({{ site.baseurl }}/images/BABIP.png) </center>
 
 ![_config.yml]({{ site.baseurl }}/images/All_Player_BABIP.png)
 
@@ -73,7 +74,7 @@ The dashed lines represent one standard deviation above and below the national a
 
 In the following tables, we have summarized some statistics. The most recent addition is the wRAA. wRAA (insert Fangraphs link) is the weighted runs above average, it measures the number of offensive runs a player contributes to their team compared to the average player. The equation to find wRAA is: 
 
-![_config.yml]({{ site.baseurl }}/images/wRAA.png)
+<center> ![_config.yml]({{ site.baseurl }}/images/wRAA.png) </center>
 
 ![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
 
