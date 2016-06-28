@@ -12,7 +12,7 @@ comments: false
 ![_config.yml]({{ site.baseurl }}/images/Blue_Bell_Pic_2.jpg)
 
 
-In the past, baseball would not have interested me that much, be it professional or college. Needless to say, just like anyone else my interests have shifted over time. I would like to attribute it to a growing number of factors, from having a committee member who loves baseball to an old roommate writing for the Astros blog (SB Nation’s Crawfish boxes, check out his posts especially if you are a fan that belongs to the AL West).  Oh yeah, sadly there is a Yankee’s fan that’s in the mix as well. Luckily, I won’t ever considering cheering for any other team but my beloved Texas Rangers. It also helps to keep up with baseball, when your team is constantly ranked in the Top 25. Gig’Em Ags!
+In the past, baseball would not have interested me that much, be it professional or college. Needless to say, just like anyone else my interests have shifted over time. I would like to attribute it to a growing number of factors, from having a committee member who loves baseball to an old roommate writing for the Astros blog ([SB Nation’s Crawfish boxes](http://www.crawfishboxes.com/2016/6/27/12039740/the-good-the-bad-and-the-ugly-a-weekly-al-west-roundup-week-12), check out his posts especially if you are a fan that belongs to the AL West).  Oh yeah, sadly there is a Yankee’s fan that’s in the mix as well. Luckily, I won’t ever considering cheering for any other team but my beloved Texas Rangers. It also helps to keep up with baseball, when your team is constantly ranked in the Top 25. Gig’Em Ags!
 
 A few months ago, during my job hunt I decided to try my luck and apply for a few sports analytics jobs. I never thought I would get a call back, especially from baseball teams. But I did, and I must say the experience was fantastic. Thanks to that I have decided to share with y’all some projects that I undertake.  If you think there are any in particular that might interest me, please do share. 
 
@@ -50,7 +50,7 @@ Even though throughout the year 1/3 of the Top 25 poll consisted of SEC teams, i
 
 Since Bill James book in 1980, the Majors has adopted various sabermetrics to further assess players. NCAA does not track such data for a variety of reasons from being a college league to not having funding. I do however think it would be possible, they could hire college students to keep track of some of the more advanced statistics for really cheap at each university. There are a few offensive sabermetrics that can be calculated with the available stats provided by the NCAA. 
 
-The first metric to look at is wOBA (weighted On-Base Average), it is an all inclusive offensive statistic. This metric determines a hitter’s offensive value by placing relative weights on different offensive events. The formula for wOBA is: 
+The first metric to look at is wOBA (weighted On-Base Average), it is an all inclusive offensive statistic. This metric determines a hitter’s offensive value by placing relative weights on different offensive events. The formula for [wOBA](http://www.fangraphs.com/library/offense/woba/) is: 
 
 ![_config.yml]({{ site.baseurl }}/images/wOBA.png)
 
@@ -64,7 +64,7 @@ A more visual approach to wOBA would be to breakdown the percentage of hit types
 
 ![_config.yml]({{ site.baseurl }}/images/Hit_Distribution.png)
 
-Interestingly enough, the Aggies have higher percentages in all hit types, with the exception of walks and hit by pitch. This also helps explain why the majority of Aggies have a low walk percentage (as seen in the plate discipline plots). Seeing as the Aggies have a high percentage of singles comparatively, they should have a high BABIP (Batting Average on Balls In Play). 
+Interestingly enough, the Aggies have higher percentages in all hit types, with the exception of walks and hit by pitch. This also helps explain why the majority of Aggies have a low walk percentage (as seen in the plate discipline plots). Seeing as the Aggies have a high percentage of singles comparatively, they should have a high [BABIP](http://www.fangraphs.com/library/pitching/babip/) (Batting Average on Balls In Play). 
 
 {: .center}
 ![_config.yml]({{ site.baseurl }}/images/BABIP.png)
@@ -73,7 +73,7 @@ Interestingly enough, the Aggies have higher percentages in all hit types, with 
 
 The dashed lines represent one standard deviation above and below the national average. Most Aggie’s are within one standard deviation above the national average. The truly great hitters are usually above the national average by a whole standard deviation. Only three Aggie hitters are above this mark: Ronnie Gideon, Austin Homan and Boomer White.  We have been over the Gideon case, where he had defensive deficiencies and was continuously inconsistent offensively. Austin Homan is quite a surprise, but looking at his stat line puts this in perspective. Homan hit 1 HR all year, brought in 26 RBIs and 56 hits. It seems that he was quite adept at getting on base and putting balls in play. Of course, White shows up once again further solidifying his offensive prowess. 
 
-In the following tables, we have summarized some statistics. The most recent addition is the wRAA. wRAA (insert Fangraphs link) is the weighted runs above average, it measures the number of offensive runs a player contributes to their team compared to the average player. The equation to find wRAA is: 
+In the following tables, we have summarized some statistics. The most recent addition is the wRAA. [wRAA](http://www.fangraphs.com/library/offense/wraa/) is the weighted runs above average, it measures the number of offensive runs a player contributes to their team compared to the average player. The equation to find wRAA is: 
 
 {: .center}
 ![_config.yml]({{ site.baseurl }}/images/wRAA.png)
