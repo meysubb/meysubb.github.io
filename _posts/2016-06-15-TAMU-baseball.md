@@ -74,7 +74,7 @@ The dashed lines represent one standard deviation above and below the national a
 
 In the following tables, we have summarized some statistics. The most recent addition is the wRAA. wRAA (insert Fangraphs link) is the weighted runs above average, it measures the number of offensive runs a player contributes to their team compared to the average player. The equation to find wRAA is: 
 
-![_config.yml]({{ site.baseurl }}/images/wRAA.png){: .center-image }
+->![_config.yml]({{ site.baseurl }}/images/wRAA.png)<-
 
 ![_config.yml]({{ site.baseurl }}/images/Top_Half.png)
 
