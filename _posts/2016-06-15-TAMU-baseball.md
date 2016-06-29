@@ -2,7 +2,7 @@
 layout: post
 title: "TAMU BASEBALL"
 description: "Texas A&M and their powerful bats"
-category: baseball
+category: sports analytics
 tags: [college baseball, R, python]
 comments: false
 ---

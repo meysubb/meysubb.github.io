@@ -2,7 +2,7 @@
 layout: post
 title: "March Madness"
 description: "Usefull application to fill out march madness brackets"
-category: baseketball
+category: sports analytics
 tags: [college basketball, R, python, college sports]
 comments: false
 ---
