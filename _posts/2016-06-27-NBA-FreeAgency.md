@@ -55,7 +55,7 @@ Graphics coming soon.
 
 ### Orlando Magic 
 
-![_config.yml]({{ site.baseurl }}/images/Magic.png)
+![_config.yml]({{ site.baseurl }}/images/Orlando_Magic.png)
 
 ### Philadelphia 76'ers 
 
