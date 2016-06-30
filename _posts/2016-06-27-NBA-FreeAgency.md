@@ -17,15 +17,15 @@ Seeing as we are all Dallas Mavs fans, we are all going to take a crack at poten
 
 ![_config.yml]({{ site.baseurl }}/images/Dallas_Mavs.png)
 
-** Chai ** 
+**Chai** 
 
 Chai will also look at the 76'ers, Pacers, and Celtics. 
 
-** Meyappan ** 
+**Meyappan** 
 
 I have decided to look at the Magic, Thunder, and Lakers.
 
-** Rohit ** 
+**Rohit** 
 
 Rohit is looking at the T-Wolves, Bucks, and Celtics.  
 
