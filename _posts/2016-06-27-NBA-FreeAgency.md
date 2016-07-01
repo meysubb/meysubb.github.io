@@ -15,7 +15,7 @@ I want to introduce you to to some of my good friends who love the NBA just as m
 
 Seeing as we are all Dallas Mavs fans, we are all going to take a crack at potential moves for the Mavs. 
 
-![_config.yml]({{ site.baseurl }}/images/Dallas_Mavs.png)
+![_config.yml]({{ site.baseurl }}/images/Mavs.png)
 
 **Chai** 
 
@@ -43,25 +43,27 @@ Rohit is looking at the T-Wolves, Bucks, and Celtics.
 
 ### Minnesota Timberwolves
 
-Graphics coming soon.
+![_config.yml]({{ site.baseurl }}/images/Wolves.png)
 
 ### Milwaukee Bucks
 
-Graphics coming soon.
+![_config.yml]({{ site.baseurl }}/images/Bucks.png)
 
 ### OKC Thunder 
 
-![_config.yml]({{ site.baseurl }}/images/OKC_Thunder.png)
+![_config.yml]({{ site.baseurl }}/images/Thunder.png)
 
 ### Orlando Magic 
 
-![_config.yml]({{ site.baseurl }}/images/Orlando_Magic.png)
+![_config.yml]({{ site.baseurl }}/images/Magic.png)
 
 ### Philadelphia 76'ers 
 
 ![_config.yml]({{ site.baseurl }}/images/76ers.png)
 
 ### Portland Trailblazers
+
+![_config.yml]({{ site.baseurl }}/images/Trailblazers.png)
 
 
 IF we have time the Cavs and Warriors will be highlighted too. 
