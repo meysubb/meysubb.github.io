@@ -43,7 +43,7 @@ Chai will also look at the 76'ers, Pacers, and Celtics.
 
 **Meyappan** 
 
-Unlike Chai, I have no hope whatsoever in the Dallas Mavericks and their Free Agency shennanigans. This happens year in and year our. I hvae always tried to find a glimpse of hope in the rookies we had from Josh Howard, Beaubois, Crowder, Larkin, and Anderson. Turns out I was really only right about one so far Jae Crowder, and he far exceeded his potential with Brad Stevens. Lets hope the Virginia boys (Carlisle also went to UVA) make some magic happen for the Mavs. I hope we retain Powell as well. 
+Unlike Chai, I have no hope whatsoever in the Dallas Mavericks and their Free Agency shennanigans. This happens year in and year out. I hvae always tried to find a glimpse of hope in the rookies we had from Josh Howard, Beaubois, Crowder, Larkin, and Anderson. Turns out I was really only right about one so far Jae Crowder, and he far exceeded his potential with Brad Stevens. Lets hope the Virginia boys (Carlisle and Anderson) make some magic happen for the Mavs. I hope we retain Powell as well. 
 
 [REMAINING TBD]
 
