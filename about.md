@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hey. I'm Meyappan. For those of you that are thinking about where my name is from, its Indian. If you want to be more precise its South Indian and even more than that its a Tamil name. 
+Hey. I'm Meyappan. For those of you that are thinking about where my name is from, its Indian.
 
 So I got both my degrees at Texas A&M. GiG'EM! Both were in Nuclear Engineering (B.S and M.S). I have tons of interests that span from Nuclear related things to sports, international relations, etc. Specifically to nuclear, my interests include Non-proliferation, Security, Safeguards, Arms Control, Power Production, Communicating Nuclear issues, and the use of radiation in medical related topics. For instance, most people don't know this but MRI used to be called nuclear magnetic resonance imaging but people started to freak out and it was modified to MRI. 
 
