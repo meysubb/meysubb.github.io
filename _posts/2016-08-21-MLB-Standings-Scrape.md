@@ -184,7 +184,7 @@ The resulting weekly record is:
 
 ### AL West Division Plot (Shown by GB)
 
-[_config.yml]({{ site.baseurl }}/images/AL_West.png) 
+![_config.yml]({{ site.baseurl }}/images/AL_West.png) 
 
 
 
