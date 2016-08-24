@@ -117,6 +117,37 @@ The output is as follows:
 6  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
 ```
 
+### Weekly records for the AL West 
+
+The previous lines of code can be furthered to determine the weekly records for the AL West. 
+
+```r
+len <- nrow(dates)
+first_sunday <- dates$d[len-1]
+last_sunday  <- dates$d[len]
+week_record <- overall_standings %>% filter(m==month & d>=first_sunday & d<=last_sunday)
+week_record[,c(5,6,9,10)] <- sapply(week_record[,c(5,6,9,10)],as.numeric)
+week_record #prints week_record
+```
+
+The code above, filters the overall_standings data frame for the last two sundays of interest. In this case it filters the previous data between 8/14 and 8/21. The output is as follows. 
+
+```
+       y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
+   (int) (int) (int) (chr) (dbl) (dbl) (chr) (chr) (dbl) (dbl)    (chr)
+1   2016     8    14   TEX    69    50  .580    --   554   555     .499
+2   2016     8    14   SEA    62    54  .534   5.5   541   495     .541
+3   2016     8    14   HOU    61    57  .517   7.5   525   481     .540
+4   2016     8    14   OAK    52    66  .441  16.5   474   570     .416
+5   2016     8    14   LAA    49    68  .419  19.0   529   564     .471
+6   2016     8    21   TEX    73    52  .584    --   582   581     .501
+7   2016     8    21   SEA    66    57  .537   6.0   579   528     .542
+8   2016     8    21   HOU    64    60  .516   8.5   569   523     .538
+9   2016     8    21   OAK    53    71  .427  19.5   495   596     .416
+10  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
+```
+
+Looking at the data above, 
 
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
 --> 
