@@ -62,12 +62,13 @@ The output is as follows:
 In order to plot and see the changes in the division on a weekly or daily basis, we will need to scrape and clean this data. 
 
 ```r
+library(reshape2)
 dates <- as.data.frame(seq(as.Date("2016/04/03"), as.Date(date), by = "weeks"))
 names(dates) <- "dates" 
 dates <- colsplit(dates$dates, "-", c("y", "m", "d"))
 head(dates)
 ```
-A complete sequence of dates is needed to scrape division standings over the course of time. 
+A complete sequence of dates is needed to scrape division standings over the course of time. The rehsape2 package is loaded, it provides the colsplit function to split the dates into three separate columns. This will be useful later, when providing the date scrape function with those dates. 
 
 The output is as follows: 
 
@@ -84,6 +85,8 @@ The output is as follows:
 Using the dates data frame, standings data can be scraped. 
 
 ```r
+library(plyr)
+library(dplyr)
 overall_standings <- dates %>% group_by(y,m,d) %>% do(date_scrape(.$y, .$m, .$d, div))
 head(overall_standings)
 tail(overall_standings)
@@ -147,7 +150,37 @@ The code above, filters the overall_standings data frame for the last two sunday
 10  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
 ```
 
-Looking at the data above, 
+Looking at the data above, these are not weekly records. Instead they are records as of 8/14 and 8/21. Not to worry, R's dplyr and plyr package will allow us to calculate the weekly records. 
+
+```r
+weekly <- week_record %>% 
+  group_by(Tm) %>% 
+  mutate(Week_W= W - lag(W),Week_L = L - lag(L),RS_Week = RS - lag(RS), RA_Week = RA-lag(RA)) %>%
+  na.omit() %>% 
+  select(Tm,Week_W,Week_L,RS_Week,RA_Week) %>% 
+  mutate(W.L = signif(Week_W / (Week_W + Week_L),digits=3)) %>% 
+  mutate(pythW.L. = signif(RS_Week^1.83/(RS_Week^1.83 + RA_Week^1.83),digits=3))
+
+weekly
+```
+
+The above chunk of code calculates the weekly division data. First, it takes week_record (as seen above) and groups it by Team. After that, it calculates the following new column values Week Wins, Week Losses, Runs Scored Weekly, Runs Allowed Weekly, Win/Loss % and the Pythagorean Win/Loss %. 
+
+Lets look at Week_W = W - lag(W). Here the Week Wins is calculated by taking the latest W value for a Team and subtracted it from its previous W value for that Team.  For example, take the Rangers (Tex). The two win values are 69 and 73. The Week_W is 73 - 69, resulting in 4 wins this past week. 
+
+The Win/Loss % and Pytahogream Win/Loss % are calculated using the most recent variables created. Before doing so, only the most recently calculated columns must be chosen. This is done so using the select function. The Win/Loss % is calculated using the current Week Win and Week Loss totals. 
+
+The resulting weekly record is:  
+
+```
+     Tm Week_W Week_L RS_Week RA_Week   W.L pythW.L.
+  (chr)  (dbl)  (dbl)   (dbl)   (dbl) (dbl)    (dbl)
+1   TEX      4      2      28      26 0.667    0.534
+2   SEA      4      3      38      33 0.571    0.564
+3   HOU      3      3      44      42 0.500    0.521
+4   OAK      1      5      21      26 0.167    0.404
+5   LAA      3      4      21      29 0.429    0.356
+```
 
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
 --> 
