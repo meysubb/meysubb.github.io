@@ -15,10 +15,6 @@ Through the course of this post, I will walk you through scraping this data via 
 
 ```r
 library(XML)
-library(plyr)
-library(dplyr)
-library(reshape2)
-library(ggplot2)
 
 date_scrape <- function(y,m,d,div) {
   url <- paste0("http://www.baseball-reference.com/games/standings.cgi?year=",y,"&month=",m, "&day=",d,"&submit=Submit+Date")
@@ -26,7 +22,25 @@ date_scrape <- function(y,m,d,div) {
   d <- as.data.frame(d[div])
   d
 }
+```
 
+The XML library is loaded to scrape data using R. The date scrape function automates scraping MLB division data from Baseball Reference. First the function, determines the url for baseball reference based on the date. After which, it scrapes all HTML tables. Finally, it selects the appropriate division from all the tables. For quick reference
+
+| Division Name | Number        | 
+| ------------- |:-------------:| 
+| AL East       | 2 | 
+| AL Central    | 3 |  
+| AL West       | 4 | 
+
+Corresponding Divisions 
+Div 2 AL EAST
+Div 3  AL Central
+Div 4 Al WEST 
+Div 5 NL EAST
+Div 6 NL Central
+Div 7 NL WEST
+
+```r
 year <- 2016
 month <- 8
 day <- 22
@@ -36,9 +50,10 @@ date <- paste0(year,"/",month,"/",day)
 overall_standings <- date_scrape(year,month,day,div)
 ```
 
+The output is as follows: 
 
 ```
-# Output of Overall_Standings 
+# AL East 
 
    Tm  W  L W.L.   GB  RS  RA pythW.L.
 1 TEX 73 52 .584   -- 582 581     .501
