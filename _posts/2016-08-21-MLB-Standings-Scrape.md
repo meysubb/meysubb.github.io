@@ -13,6 +13,28 @@ Through the course of this post, I will walk you through scraping this data via 
 
 ### AL West Division Standings
 
+```r
+library(XML)
+library(plyr)
+library(dplyr)
+library(reshape2)
+library(ggplot2)
+
+date_scrape <- function(y,m,d,div) {
+  url <- paste0("http://www.baseball-reference.com/games/standings.cgi?year=",y,"&month=",m, "&day=",d,"&submit=Submit+Date")
+  d <- readHTMLTable(url, stringsAsFactors = FALSE)
+  d <- as.data.frame(d[div])
+  d
+}
+
+year <- 2016
+month <- 8
+day <- 22
+div <- 4
+
+date <- paste0(year,"/",month,"/",day)
+overall_standings <- date_scrape(year,month,day,div)
+```
 
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
 --> 
