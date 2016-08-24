@@ -182,8 +182,9 @@ The resulting weekly record is:
 5   LAA      3      4      21      29 0.429    0.356
 ```
 
-<!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
---> 
+### AL West Division Plot (Shown by GB)
+
+[_config.yml]({{ site.baseurl }}/images/AL_West.png) 
 
 
 
