@@ -34,7 +34,10 @@ div <- 4
 
 date <- paste0(year,"/",month,"/",day)
 overall_standings <- date_scrape(year,month,day,div)
+```
 
+
+```
 # Output of Overall_Standings 
 
    Tm  W  L W.L.   GB  RS  RA pythW.L.
