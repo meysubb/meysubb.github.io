@@ -35,7 +35,14 @@ div <- 4
 date <- paste0(year,"/",month,"/",day)
 overall_standings <- date_scrape(year,month,day,div)
 
-overall_standings
+# Output of Overall_Standings 
+
+   Tm  W  L W.L.   GB  RS  RA pythW.L.
+1 TEX 73 52 .584   -- 582 581     .501
+2 SEA 66 57 .537  6.0 579 528     .542
+3 HOU 64 60 .516  8.5 569 523     .538
+4 OAK 53 71 .427 19.5 495 596     .416
+5 LAA 52 72 .419 20.5 550 593     .466
 ```
 
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
