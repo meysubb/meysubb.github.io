@@ -27,18 +27,14 @@ date_scrape <- function(y,m,d,div) {
 The XML library is loaded to scrape data using R. The date scrape function automates scraping MLB division data from Baseball Reference. First the function, determines the url for baseball reference based on the date. After which, it scrapes all HTML tables. Finally, it selects the appropriate division from all the tables. For quick reference
 
 | Division Name | Number        | 
-| ------------- |:-------------:| 
+| :-------------: |:-------------:| 
 | AL East       | 2 | 
 | AL Central    | 3 |  
 | AL West       | 4 | 
+| NL East       | 5 |
+| NL Central    | 6 | 
+| NL West       | 7 |    
 
-Corresponding Divisions 
-Div 2 AL EAST
-Div 3  AL Central
-Div 4 Al WEST 
-Div 5 NL EAST
-Div 6 NL Central
-Div 7 NL WEST
 
 ```r
 year <- 2016
@@ -53,7 +49,7 @@ overall_standings <- date_scrape(year,month,day,div)
 The output is as follows: 
 
 ```
-# AL East 
+# AL West 
 
    Tm  W  L W.L.   GB  RS  RA pythW.L.
 1 TEX 73 52 .584   -- 582 581     .501
