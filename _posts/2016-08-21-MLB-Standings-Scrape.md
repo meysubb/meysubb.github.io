@@ -92,7 +92,7 @@ head(overall_standings)
 tail(overall_standings)
 ```
 
-"%>%" passes object on the left hand side as the first argument of the function on the right hand side. It is more commonly known as a pipe. 
+``%>%" passes object on the left hand side as the first argument of the function on the right hand side. It is more commonly known as a pipe. 
 
 The dates data is grouped by year, month, day and then supplied to the date scrape function. The do function is used to iterate the scrape function over all dates (as specified by the data frame).
 
@@ -155,7 +155,7 @@ Looking at the data above, these are not weekly records. Instead they are record
 ```r
 weekly <- week_record %>% 
   group_by(Tm) %>% 
-  mutate(Week_W= W - lag(W),Week_L = L - lag(L),RS_Week = RS - lag(RS), RA_Week = RA-lag(RA)) %>%
+  mutate(Week_W = W - lag(W),Week_L = L - lag(L),RS_Week = RS - lag(RS), RA_Week = RA-lag(RA)) %>%
   na.omit() %>% 
   select(Tm,Week_W,Week_L,RS_Week,RA_Week) %>% 
   mutate(W.L = signif(Week_W / (Week_W + Week_L),digits=3)) %>% 
