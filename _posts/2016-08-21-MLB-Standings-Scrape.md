@@ -34,6 +34,8 @@ div <- 4
 
 date <- paste0(year,"/",month,"/",day)
 overall_standings <- date_scrape(year,month,day,div)
+
+overall_standings
 ```
 
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
