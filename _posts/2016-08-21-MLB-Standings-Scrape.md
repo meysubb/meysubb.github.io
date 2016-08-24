@@ -59,6 +59,65 @@ The output is as follows:
 5 LAA 52 72 .419 20.5 550 593     .466
 ```
 
+In order to plot and see the changes in the division on a weekly or daily basis, we will need to scrape and clean this data. 
+
+```r
+dates <- as.data.frame(seq(as.Date("2016/04/03"), as.Date(date), by = "weeks"))
+names(dates) <- "dates" 
+dates <- colsplit(dates$dates, "-", c("y", "m", "d"))
+head(dates)
+```
+A complete sequence of dates is needed to scrape division standings over the course of time. 
+
+The output is as follows: 
+
+```
+     y m  d
+1 2016 4  3
+2 2016 4 10
+3 2016 4 17
+4 2016 4 24
+5 2016 5  1
+6 2016 5  8
+```
+
+Using the dates data frame, standings data can be scraped. 
+
+```r
+overall_standings <- dates %>% group_by(y,m,d) %>% do(date_scrape(.$y, .$m, .$d, div))
+head(overall_standings)
+tail(overall_standings)
+```
+
+"%>%" passes object on the left hand side as the first argument of the function on the right hand side. It is more commonly known as a pipe. 
+
+The dates data is grouped by year, month, day and then supplied to the date scrape function. The do function is used to iterate the scrape function over all dates (as specified by the data frame).
+
+The output is as follows: 
+
+```
+# head(overall_standings)
+      y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
+  (int) (int) (int) (chr) (chr) (chr) (chr) (chr) (chr) (chr)    (chr)
+1  2016     4     3   SEA     0     0  .000    --     0     0         
+2  2016     4     3   TEX     0     0  .000    --     0     0         
+3  2016     4     3   HOU     0     0  .000    --     0     0         
+4  2016     4     3   OAK     0     0  .000    --     0     0         
+5  2016     4     3   LAA     0     0  .000    --     0     0         
+6  2016     4    10   OAK     4     3  .571    --    21    20     .522
+
+# tail(overall_standings)
+      y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
+  (int) (int) (int) (chr) (chr) (chr) (chr) (chr) (chr) (chr)    (chr)
+1  2016     8    14   LAA    49    68  .419  19.0   529   564     .471
+2  2016     8    21   TEX    73    52  .584    --   582   581     .501
+3  2016     8    21   SEA    66    57  .537   6.0   579   528     .542
+4  2016     8    21   HOU    64    60  .516   8.5   569   523     .538
+5  2016     8    21   OAK    53    71  .427  19.5   495   596     .416
+6  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
+```
+
+
 <!--- [_config.yml]({{ site.baseurl }}/images/Team_Cap_Space.png)
 --> 
 
