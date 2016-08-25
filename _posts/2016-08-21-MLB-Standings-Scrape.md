@@ -188,4 +188,4 @@ The resulting weekly record is:
 
 
 
-![_config.yml]({{ site.baseurl }}/images/Cum_AL_West_Plot.png) 
+![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
