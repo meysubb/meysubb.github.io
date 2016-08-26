@@ -201,7 +201,7 @@ The code should similar to the chunk shown earlier in this post, with the except
 
 
 ```
-	 y m d
+     y m d
 1 2016 4 3
 2 2016 4 4
 3 2016 4 5
@@ -212,7 +212,7 @@ The code should similar to the chunk shown earlier in this post, with the except
 
 Once we have the set of dates to scrape against, we use the date scrape function (as shown earlier).
 
-```r
+```R
 daily_standings <- dates2 %>% group_by(y,m,d) %>% do(date_scrape(.$y, .$m, .$d, 4))
 head(daily_standings)
 tail(daily_standings)
