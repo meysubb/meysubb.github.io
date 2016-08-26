@@ -259,7 +259,7 @@ Finally, the moment you have been waiting for creating the plot. First we create
 
 ```r
 team_colors = c("SEA" = "#01487E", "TEX" = "#0482CC", "HOU" = "#F7742C", "LAA" = "#CA1F2C", "OAK" = "#003300")
-
+library(ggplot2)
 ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) + 
   geom_line(size = 1.25, alpha = .75) + 
   scale_colour_manual(values = team_colors, name = "Team") + 
@@ -272,6 +272,7 @@ ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) +
   theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
 ```
 
-
+Both plots in these post were made using the ggplot2 package. I have recently heard about plotly and its interactive features. Hopefully, I will have time to learn and use these later on. 
 
 ![_config.yml]({{ site.baseurl }}/images/GO_AL_West.png) 
+
