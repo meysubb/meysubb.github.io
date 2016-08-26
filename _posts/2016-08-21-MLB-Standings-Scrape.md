@@ -272,7 +272,51 @@ ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) +
   theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
 ```
 
-Both plots in these post were made using the ggplot2 package. I have recently heard about plotly and its interactive features. Hopefully, I will have time to learn and use these later on. 
+[INSERT description of ggplot layers]
+
+Both plots in these post were made using the ggplot2 package. I have recently heard about plotly and its interactive features. Hopefully, I will have time to learn how to use that package later. 
+
+Alright another plot to visualize the standings is to look at the cumulative gaves over .500 over the course of time. 
+
+
+```r
+overall_standings$W <- as.numeric(overall_standings$W)
+overall_standings$L <- as.numeric(overall_standings$L)
+overall_standings$c_500 <- with(overall_standings,W-L)
+c_game_500 <- ungroup(overall_standings) %>% mutate(Date = paste0(y, sep = "-", m, sep = "-", d)) %>% select(Date, Tm, c_500)
+c_game_500$Date <- as.Date(c_game_500$Date)
+head(c_game_500)
+```
+
+The above chunk of code takes the scraped division standings by week, and finds the number of games above .500 a team is. This is very similar to the previous chunk of code shown for the games behind plot shown previously. 
+
+```
+        Date    Tm cum_500
+      (date) (chr)   (dbl)
+1 2016-04-03   SEA       0
+2 2016-04-03   TEX       0
+3 2016-04-03   HOU       0
+4 2016-04-03   OAK       0
+5 2016-04-03   LAA       0
+6 2016-04-10   OAK       1
+```
+Lastly, below is the chunk of code used to create this plot. 
+
+
+```R
+ggplot(cum_game_500, aes(Date, cum_500, colour = Tm)) + 
+  geom_line(size = 1.25, alpha = .75) + 
+  geom_hline(yintercept = 0) + 
+  scale_colour_manual(values = team_colors, name = "Team") + 
+  scale_x_date() + 
+  geom_text(aes(label=ifelse(Date == "2016-08-21", as.character(cum_500),'')),hjust=-.5, size = 4, show.legend = FALSE) +
+  labs(title = "AL West Race through August 2016",y="Cumulative games over .500") + 
+  theme(legend.title = element_text(size = 12)) + 
+  theme(legend.text = element_text(size = 12)) + 
+  theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
+```
+
+[INSERT description of ggplot layers]
 
 ![_config.yml]({{ site.baseurl }}/images/GO_AL_West.png) 
 
