@@ -274,5 +274,4 @@ ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) +
 
 
 
-![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
-![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
+![_config.yml]({{ site.baseurl }}/images/GO_AL_West.png) 
