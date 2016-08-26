@@ -186,6 +186,90 @@ The resulting weekly record is:
 
 ![_config.yml]({{ site.baseurl }}/images/AL_West.png) 
 
+For those of you curious how to develop a plot like that, I am about to walk you through the steps. First off, we need to scrape the data. This should be fairly simple given then above examples. 
 
+To create the above plot, we will need data per day. To do this, we will need to make a data frame similar to the dates data frame we made before. But this time, we need to sequence over days instead of weeks (see below).
+
+```r
+dates2 <- as.data.frame(seq(as.Date("2016/04/03"), as.Date(date), by = "days"))
+names(dates2) <- "days" 
+dates2 <- colsplit(dates2$days, "-", c("y", "m", "d"))
+head(dates2)
+```
+
+The code should similar to the chunk shown earlier in this post, with the exception of sequencing over days instead of weeks. 
+
+
+```
+	 y m d
+1 2016 4 3
+2 2016 4 4
+3 2016 4 5
+4 2016 4 6
+5 2016 4 7
+6 2016 4 8
+```
+
+Once we have the set of dates to scrape against, we use the date scrape function (as shown earlier).
+
+```r
+daily_standings <- dates2 %>% group_by(y,m,d) %>% do(date_scrape(.$y, .$m, .$d, 4))
+head(daily_standings)
+tail(daily_standings)
+```
+
+The output from this looks like: 
+
+```
+# head(daily_standings)
+      y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
+  (int) (int) (int) (chr) (chr) (chr) (chr) (chr) (chr) (chr)    (chr)
+1  2016     4     3   SEA     0     0  .000    --     0     0         
+2  2016     4     3   TEX     0     0  .000    --     0     0         
+3  2016     4     3   HOU     0     0  .000    --     0     0         
+4  2016     4     3   OAK     0     0  .000    --     0     0         
+5  2016     4     3   LAA     0     0  .000    --     0     0         
+6  2016     4     4   TEX     1     0 1.000    --     3     2     .677
+
+
+# tail(daily_standings)
+      y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
+  (int) (int) (int) (chr) (chr) (chr) (chr) (chr) (chr) (chr)    (chr)
+1  2016     8    20   LAA    51    72  .415  21.5   548   593     .464
+2  2016     8    21   TEX    73    52  .584    --   582   581     .501
+3  2016     8    21   SEA    66    57  .537   6.0   579   528     .542
+4  2016     8    21   HOU    64    60  .516   8.5   569   523     .538
+5  2016     8    21   OAK    53    71  .427  19.5   495   596     .416
+6  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
+```
+
+Finally before plotting this data, it requires some post-processing. This should be quite fun. So some of the data we scraped from Baseball Reference shows up as character types, and we need them to be in a numeric format. If data isn't in a numeric format, then the plotting library will treat the data in a discrete manner. 
+
+```r
+alW_standings_2016 <- ungroup(daily_standings) %>% mutate(Date = paste0(y, sep = "-", m, sep = "-", d)) %>% select(Date, Tm, GB)
+alW_standings_2016$GB <- as.numeric(alW_standings_2016$GB) 
+alW_standings_2016$Date <- as.Date(alW_standings_2016$Date)
+alW_standings_2016$Tm <- as.factor(alW_standings_2016$Tm)
+alW_standings_2016$GB <- ifelse(is.na(alW_standings_2016$GB), 0, alW_standings_2016$GB)
+```
+
+First, we apply the ungroup function to remove any existing groupings that may exist in the data frame. After that we combine the following columns: y,m,d into an actual date. The select function, selects the columns of interest. The following statements convert each column into different data types. One into a numeric data type, the other into a date type and lastly a factor. Factors are variables that can only take on a limited number of different values, in this case all possible teams. The if else statement, takes all NA's and replaces them with a 0. This applies mainly for the first couple of days where some teams didn't play a game. 
+
+Finally, the moment you have been waiting for creating the plot. First we create a vector with a list of team colors. 
+
+```r
+team_colors = c("SEA" = "#01487E", "TEX" = "#0482CC", "HOU" = "#F7742C", "LAA" = "#CA1F2C", "OAK" = "#003300")
+
+ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) + 
+  geom_line(size = 1.25, alpha = .75) + 
+  scale_colour_manual(values = team_colors, name = "Team") + 
+  scale_y_reverse(breaks = 0:25) + 
+  scale_x_date() + 
+  geom_text(aes(label=ifelse(Date == "2016-08-21", as.character(GB),'')),hjust=-.5, size = 4, show.legend = FALSE) +
+  labs(title = "AL West Race through August 2016") + 
+  theme(legend.title = element_text(size = 12)) + 
+  theme(legend.text = element_text(size = 12)) + 
+  theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
+```
 
 ![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
