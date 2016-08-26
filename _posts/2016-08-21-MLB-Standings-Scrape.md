@@ -272,4 +272,7 @@ ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) +
   theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
 ```
 
+
+
+![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
 ![_config.yml]({{ site.baseurl }}/images/CUM_AL_West_Plot.png) 
