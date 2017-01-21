@@ -17,3 +17,5 @@ gems:
 sass:
     sass_dir: _sass
     style: :compressed
+
+google_analytics: UA-90700102-1
