@@ -90,7 +90,7 @@ autoplot(mbm)
 ```
 ![_config.yml]({{ site.baseurl }}/images/not_vector-1.png)
 
-Well, now that I (formally) knew that R was a vector based language this piece of code was going to become much easier to accomplish. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
+Well, now that I (formally) know that R is a vector based language this piece of code is much easier to accomplish. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 
 Alright, lets move forth to the TIDYVERSE! Yep, the more and more I browse stack overflow, answers are provided with a focus on using tidyverse or data.table solutions.
 
