@@ -15,6 +15,7 @@ comments: false
     -   [tidyverse - Column adds](#tidyverse---column-adds)
     -   [base R (sapply) vs. tidyverse](#base-r-sapply-vs.-tidyverse)
 -   [Parallel Processing](#parallel-processing)
+-   [TLDR](#tldr)
 
 I started using R about a year and a half ago at my summer internship with PNNL, also my current employer. Note: Opinions expressed are solely my own and do not express the views or opinions of my employer.
 
@@ -91,7 +92,7 @@ autoplot(mbm)
 
 Well, now that I (formally) knew that R was a vector based language this piece of code was going to become much easier to accomplish. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 
-Alright, lets move forth to the TIDYVERSE! Yep, the more and more I browse stack overflow answers either focus on tidyverse or data.table solutions.
+Alright, lets move forth to the TIDYVERSE! Yep, the more and more I browse stack overflow, answers are provided with a focus on using tidyverse or data.table solutions.
 
 Tidyverse
 ---------
@@ -139,7 +140,7 @@ proc.time() - ptm
     ##    user  system elapsed 
     ##   0.004   0.000   0.006
 
-Again, so when it comes to making new columns. There is no real advantage if you use base R or the tidyverse for this. You should see the advantage of using the tidyverse with some of the more complex situations.
+When it comes to making new columns. There is no real advantage whether you use base R or tidyverse for this. You should see the advantage of using the tidyverse with some of the more complex situations.
 
 Using the stats per game, each players total fouls in a season were calculated. After it is calculated it is then appended back to the aggregate player data frame.
 
@@ -195,7 +196,7 @@ for (variable in seq(along=home_away_vars_to_populate)) {
 n_prl_time <- proc.time() - nprl_time
 ```
 
-So looking back, this is a pretty inefficient chunk of code. It stores the data into separate vectors, which have to be appended back to the data. A nested sapply loop within a for loop definitely slows things down. Also, if you are interested in using the row names of a data-frame then consider saving it as a separate column.
+So looking back, this is a pretty inefficient chunk of code. It stores the data into separate vectors, which have to be appended back into the data. A nested sapply loop within a for loop definitely slows things down. Also, if you are interested in using the row names of a data-frame then consider saving it as a separate column.
 
 The advantage of parallelizing code is that the code is split into pieces, executed in parallel and then the results are combined together. There are a a plethora of parallel packages in R. I will post a set of links below, if you are interested in learning more about parallelization in R.
 
@@ -260,8 +261,11 @@ As per the documentation: The ‘user time’ is the CPU time charged for the ex
 
 Elapsed time is easily perceived to the user (i.e when your code is done running), we use it to determine the performance impact from a time standpoint. It's about 2x times faster. Definitely worth it, in my opinion.
 
+TLDR
+----------
+
+So in short, there is a time for base r, tidyverse, and even parallel processing. Hopefully, this post highlighted the performance improvement (from a time standpoint) when used correctly.
+
 Hopefully, I've hit on some R packages and features that you will find useful. As you can see, base R does a lot of things well. However when it comes to the harder data munging and cleaning tasks it falls short. At first I thought about using for loops, but quickly learned that I should rely on apply family of loops. Turns out some of the tasks I was trying to accomplish are easily handled by the tidyverse set of packages, specifically dplyr. I was a bit surprised that I had to rely on parallel processing to sort through the data and determine opponent statistics. It proved to be very time efficient and satisfied the computer nerd in me.
 
-There is a time for base r, tidyverse, and even parallel processing. Hopefully, this post highlighted the performance improvement (from a time standpoint) when used correctly.
-
-I'm sure I will follow this post up again (in a year) detailing some other cool packages and features available in R. Data.table is on the docket of things to learn. Let me know if you have any other recommendations. Tweet at @msubbaiah1.
+I'm sure I will follow this post up again (in a year) detailing some other cool packages and features available in R. Data.table is on the docket of things to learn. Let me know if you have any other recommendations. Tweet at [@msubbaiah1](https://twitter.com/msubbaiah1).
