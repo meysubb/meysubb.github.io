@@ -72,7 +72,7 @@ There is little to no difference in the two options. You can load the data any w
 Vectors
 -------
 
-R is a vector based language. I didn't actually know this until I took a class in graduate school, where the professor taught R with a bioinformatics spin to it. I am very glad I learnt that, and I can show you exactly why below.
+R is a vector based language. I didn't actually know this until I took a class in graduate school, where the professor taught R with a bioinformatics spin. I am very glad I learnt that, and can show you exactly why below.
 
 Well, this time instead of timing the functions I'll benchmark them. So let's take a look.
 
