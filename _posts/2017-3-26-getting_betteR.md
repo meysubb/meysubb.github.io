@@ -21,7 +21,7 @@ I started using R about a year and a half ago at my summer internship with PNNL,
 
 That paved the way for me to use R for my master's thesis. Now, I use R for a variety of things. I use python as well, mostly for web scraping currently. Hopefully, that'll change. But this is more about the evolution of my R knowledge. So let's get to it.
 
-For the past two years, I've created an NCAA stat visualizer. (Hopefully, in the near future I can provide predictions for any potential match-up.) The stat visualizer has been handy when filling out brackets. One of the most time intensive processes in this yearly project, is data cleaning and manipulation.
+For the past two years, I've created an NCAA stat visualizer. (In the near future I will try to provide predictions for any potential match-up.) The stat visualizer has been handy when filling out brackets. One of the most time intensive processes in this yearly project, is data cleaning and manipulation.
 
 I'll highlight a handful of useful R tips including, **proper list usage, vectorization, tidyverse libraries, and foreach parallelization**. I picked these specific topics, as that's what I've found myself using often when coding in R.
 
@@ -266,6 +266,6 @@ TLDR
 
 So in short, there is a time for base r, tidyverse, and even parallel processing. Hopefully, this post highlighted the performance improvement (from a time standpoint) when used correctly.
 
-Hopefully, I've hit on some R packages and features that you will find useful. As you can see, base R does a lot of things well. However when it comes to the harder data munging and cleaning tasks it falls short. At first I thought about using for loops, but quickly learned that I should rely on apply family of loops. Turns out some of the tasks I was trying to accomplish are easily handled by the tidyverse set of packages, specifically dplyr. I was a bit surprised that I had to rely on parallel processing to sort through the data and determine opponent statistics. It proved to be very time efficient and satisfied the computer nerd in me.
+I've hit on some R packages and features that you will find useful. As you can see, base R does a lot of things well. However when it comes to the harder data munging and cleaning tasks it falls short. At first I thought about using for loops, but quickly learned that I should rely on apply family of loops. Turns out some of the tasks I was trying to accomplish are easily handled by the tidyverse set of packages, specifically dplyr. I was a bit surprised that I had to rely on parallel processing to sort through the data and determine opponent statistics. It proved to be very time efficient and satisfied the computer nerd in me.
 
 I'm sure I will follow this post up again (in a year) detailing some other cool packages and features available in R. Data.table is on the docket of things to learn. Let me know if you have any other recommendations. Tweet at [@msubbaiah1](https://twitter.com/msubbaiah1).
