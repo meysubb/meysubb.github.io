@@ -69,7 +69,7 @@ proc.time() - ptm
 
 In this scenario, there is little to no difference in the two options (time-wise). You can load the data any way you want. I prefer the second option, much less typing. :)
 
-Note: The main advantage of a list is that it can be an collection of varying different elements. For example, a list could store two different dataframes and a vector (with differing structures). Lists are vectors in R. However, Lists are recursive in nature while vectors are not. "Recursive" here refers to the fact that it can contain values of different types, lengths, etc. 
+Note: The main advantage of a list is that it can be a collection of varying different elements. For example, a list could store two different dataframes and a vector (with differing structures). Lists are vectors in R. However, Lists are recursive in nature while vectors are not. "Recursive" here refers to the fact that it can contain values of different types, lengths, etc. 
  
 If you are new to R and trying to learn how the different data types work, here are a few links.
 [Impatient R](http://www.burns-stat.com/documents/tutorials/impatient-r/) 
