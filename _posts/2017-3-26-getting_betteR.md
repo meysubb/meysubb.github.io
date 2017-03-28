@@ -30,7 +30,7 @@ Note: The scraped data has four different csvs, individual game (team and player
 List Usage
 ----------
 
-Let's start with the proper list usage. Lately, I've become a firm believer in using lists when appropriate. A nice example: reading in multiple csvs into a list, and then separate that list into individual data-frames.
+Let's start with the proper list usage. Lately, I've become a firm believer in using lists when appropriate. The example shown below reads in multiple csvs into a list, and then separate that list into individual data-frames. 
 
 I would've liked to benchmark this better, but for now I'm just going to time both options.
 
@@ -67,14 +67,24 @@ proc.time() - ptm
     ##    user  system elapsed 
     ##   1.096   0.012   1.110
 
-There is little to no difference in the two options. You can load the data any way you want. I prefer the second option, much less typing. :)
+In this scenario, there is little to no difference in the two options (time-wise). You can load the data any way you want. I prefer the second option, much less typing. :)
+
+Note: The main advantage of a list is that it can be an collection of varying different elements. For example, a list could store two different dataframes and a vector (with differing structures). Lists are vectors in R. However, Lists are recursive in nature while vectors are not. "Recursive" here refers to the fact that it can contain values of different types, lengths, etc. 
+ 
+If you are new to R and trying to learn how the different data types work, here are a few links.
+[Impatient R](http://www.burns-stat.com/documents/tutorials/impatient-r/) 
+[Tutorials Point](https://www.tutorialspoint.com/r/r_data_types.htm)
+[Stat Methods](http://www.statmethods.net/input/datatypes.html)
+[SO #1](http://stackoverflow.com/questions/8594814/what-are-the-differences-between-r-vector-and-r-list-data-types)
+
+Per the request of a friend, I'll follow up with an article focusing on the R data types. 
 
 Vectors
 -------
 
 R is a vector based language. I didn't actually know this until I took a class in graduate school, where the professor taught R with a bioinformatics spin. I am very glad I learnt that, and can show you exactly why below.
 
-Well, this time instead of timing the functions I'll benchmark them. So let's take a look.
+This time I'll benchmark our calls. Note, benchmarking essentially runs the code as many times as specified and records timing. This provides a general expected range for how long a chunk of code might take. So let's take a look.
 
 ``` r
 basicgamestats <- c("fgm", "fga", "three_fgm", "three_fga", "ft", "fta", "pts", "ptsavg", "offreb", "defreb", "totreb", "rebavg", "ast", "to", "stl", "blk", "fouls", "dbldbl", "trpdbl","fgpct", "three_fgpct", "ftpct")
@@ -90,16 +100,16 @@ autoplot(mbm)
 ```
 ![_config.yml]({{ site.baseurl }}/images/not_vector-1.png)
 
-Well, now that I (formally) know that R is a vector based language this piece of code is much easier to accomplish. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
+Well, now that I (formally) know that R is a vector based language this piece of code is accomplished quickly. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 
 Alright, lets move forth to the TIDYVERSE! Yep, the more and more I browse stack overflow, answers are provided with a focus on using tidyverse or data.table solutions.
 
 Tidyverse
 ---------
 
-The tidyverse is a collection of R packages that share common philosophies and are designed to work together, engineered by Hadley Wickham and co. For documentation, go to <http://tidyverse.org/>.
+The tidyverse is a collection of R packages that share common philosophies and are designed to work together, engineered by Hadley Wickham and co. For documentation, go to <http://tidyverse.org/>. Dplyr is a tidyverse package. 
 
-Looking through the data, there are additional columns that need to be created to determine stat percentages among other things. Originally, I did it in one of the worst ways possible.
+Looking through the data, there are additional columns that need to be created to determine stat percentages among other things. Originally, I didn't use good programming practice. 
 
 #### Base R - Column adds
 
@@ -140,11 +150,13 @@ proc.time() - ptm
     ##    user  system elapsed 
     ##   0.004   0.000   0.006
 
-When it comes to making new columns. There is no real advantage whether you use base R or tidyverse for this. You should see the advantage of using the tidyverse with some of the more complex situations.
+When it comes to making new columns. There is no real advantage whether you use base R or tidyverse for this. However, I would argue that it is good programming practice to rely on the using mutate (dplyr) or with (base) when trying to create multiple columns. The with function is helpful as it doesn't force you to keep referencing data.frame$'column name' repeatedly, as seen above. 
 
-Using the stats per game, each players total fouls in a season were calculated. After it is calculated it is then appended back to the aggregate player data frame.
+Here shortly you should see the advantage of using the tidyverse with some of the more complex situations.
 
 #### base R (sapply) vs. tidyverse
+
+In this example, the goal is to calculate the total number of fouls accrued per player. This is done by searching through each individual game and summing the fouls. After it is calculated it is then appended back to the aggregate player data frame.
 
 Sapply approach: Loop through the aggregate player data-frame, takes the player name and finds all games where the players played and sums the foul column.
 
@@ -164,6 +176,8 @@ autoplot(tv_mbm)
 ![_config.yml]({{ site.baseurl }}/images/agg_PF-1.png)
 
 Well, the tidyverse approach is **much** quicker. Good to know that things are moving along in the right direction.
+
+As you can see, this plot differs a little from the previous violin plot and that is mostly a result of the number of data points. Microbenchmark has a parameter that dictates the number of times a chunk of code is to be repeated. The default is 100, but in this case I have set it 10 (otherwise it would take me an hour to generate the results, YIKES).
 
 Parallel Processing
 -------------------
@@ -262,7 +276,7 @@ As per the documentation: The ‘user time’ is the CPU time charged for the ex
 Elapsed time is easily perceived to the user (i.e when your code is done running), we use it to determine the performance impact from a time standpoint. It's about 2x times faster. Definitely worth it, in my opinion.
 
 TLDR
-----------
+-----
 
 So in short, there is a time for base r, tidyverse, and even parallel processing. Hopefully, this post highlighted the performance improvement (from a time standpoint) when used correctly.
 
