@@ -24,16 +24,16 @@ TLDR: Use this application to fill out your NCAA bracket.
 
 
 Application Links:    <br/>
-      [2017: NCAA March Madness Application](https://meysubb.shinyapps.io/2017_marchmadness/)    
-      [2016: NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)     
+		[2017: NCAA March Madness Application](https://meysubb.shinyapps.io/2017_marchmadness/)    
+		[2016: NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)     
 
 Note: Older versions are not hosted anymore, see github for code.
 
 ## Source Code
 
 Source Code Link:          <br/> 
-        	[2017 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2017/Shiny_App/2017_MarchMadness)  
-        	[2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016).      
+		[2017 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2017/Shiny_App/2017_MarchMadness)  
+		[2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016).      
 
 
 ### Application Development 
