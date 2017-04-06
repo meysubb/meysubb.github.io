@@ -19,8 +19,8 @@ You can compare teams based on different stats, and even look at individual play
 
 TLDR: Use this application to fill out your NCAA bracket. 
 
-2017: Data updated for games played until 3/15/2017.
-2016: Additionally, I’ve got every team’s schedule (except for games played on 3/13/2016) and a separate tab that has a picture of the current bracket. 
+2017: Data updated for games played until 3/15/2017.      
+2016: Additionally, I’ve got every team’s schedule (except for games played on 3/13/2016) and a separate tab that has a picture of the current bracket.      
 
 
 Application Links:
