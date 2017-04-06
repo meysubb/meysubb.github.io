@@ -9,32 +9,33 @@ comments: false
 
 ![_config.yml]({{ site.baseurl }}/images/MarchMadness.jpg)
 
-## March Madness Application How-to
+## NCAA March Madness Stat Visualizer
 
-For those of you that love filling out NCAA brackets, have you ever struggled to fill out a bracket? Unless you religiously watch college basketball, there is a high chance that you have not seen every team play. It is even more difficult to continuoulsy compare stats between set matchups and potential matchups. 
+For those of you that love filling out NCAA brackets, have you ever struggled to fill out a bracket? Unless you religiously watch college basketball, there is a high chance that you haven't seen every team play. It is even more difficult to predict matchups continuoulsy compare stats between set matchups and potential matchups. 
 
-I wanted to avoid constatly jumping from website to website. So I went ahead and spent a little time developing an application, that allows team-team comparision for the tournament this year. This application has all of the data for the teams in the tournament and will allow you to cross-compare teams and players.  
+I wanted to avoid constatly jumping from website to website. So I went ahead and spent a little time developing an application, that allows team-team comparision for the tournament this year. This application has data for all tournament teams and will allow you to cross-compare teams and players.  
 
-You can compare teams based on multiple different stats, you can look at individual players on a team or compare the team as a whole. 
-
-The application provides data in the form of plots as well as tables. Additionally, I’ve got every team’s schedule (except for games played on 3/13/2016) and a separate tab that has a picture of the current bracket. 
+You can compare teams based on different stats, and even look at individual players or compare the team as a whole. 
 
 TLDR: Use this application to fill out your NCAA bracket. 
 
-Link: [NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)
+2017: Data updated for games played until 3/15/2017.
+2016: Additionally, I’ve got every team’s schedule (except for games played on 3/13/2016) and a separate tab that has a picture of the current bracket. 
 
+
+Application Links:
+      [2017: NCAA March Madness Application](https://meysubb.shinyapps.io/2017_marchmadness/)
+      [2016: NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)
+
+Note: Older versions are not hosted anymore, see github for code.
 
 ## Source Code
 
-Source Code: [github](https://github.com/meysubb/NCAAB_Scrapper_2016).
-
-### Data Scraping/Cleaning
-
-Data was scraped using python. Rodrigo Zamith provided python code online to scrape basketball data from the NCAA website. The last time his code was updated was in 2013. Some formats have changed since Rodrigo recently made this python code. The hyperlink formats have changed so I edited them for that as well as emphasizing the parser to use in Beautiful Soup.
-
-I also added R code to clean up the data. Some of the R code was taken from Rodrigo's old R code. I have updated it for some other new stats like AST/TO ratio, and PER. Unfortunately, to calculate PER you need to account for pace through the accounting of possesions. I was not able to find possession stats on the NCAA website. I also aimed to make the code a bit more efficient, used sapply and apply in general instead of for loops. I hope this helps.
+Source Code Link: 
+        [2017 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2017/Shiny_App/2017_MarchMadness)
+        [2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016).
 
 
 ### Application Development 
 
-The application was developed using the [shiny](http://shiny.rstudio.com/) package on R. The code for the shiny application is not currently up on github. Look for it to be up soon. 
+The application was developed using the [shiny](http://shiny.rstudio.com/) package on R. 
