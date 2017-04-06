@@ -11,6 +11,8 @@ comments: false
 
 ## NCAA March Madness Stat Visualizer
 
+### Update: 4/5/2017
+
 For those of you that love filling out NCAA brackets, have you ever struggled to fill out a bracket? Unless you religiously watch college basketball, there is a high chance that you haven't seen every team play. It is even more difficult to predict matchups continuoulsy compare stats between set matchups and potential matchups. 
 
 I wanted to avoid constatly jumping from website to website. So I went ahead and spent a little time developing an application, that allows team-team comparision for the tournament this year. This application has data for all tournament teams and will allow you to cross-compare teams and players.  
@@ -38,4 +40,4 @@ Source Code Link:          <br/>
 
 ### Application Development 
 
-The application was developed using the [shiny](http://shiny.rstudio.com/) package on R. 
+The application was developed using the [shiny](http://shiny.rstudio.com/) package in R. 
