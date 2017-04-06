@@ -33,7 +33,7 @@ Note: Older versions are not hosted anymore, see github for code.
 
 Source Code Link:          <br/> 
 		[2017 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2017/Shiny_App/2017_MarchMadness)  
-		[2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016).      
+		[2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016)       
 
 
 ### Application Development 
