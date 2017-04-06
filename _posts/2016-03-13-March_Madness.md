@@ -23,7 +23,7 @@ TLDR: Use this application to fill out your NCAA bracket.
 2016: Additionally, I’ve got every team’s schedule (except for games played on 3/13/2016) and a separate tab that has a picture of the current bracket.      
 
 
-Application Links:
+Application Links:      
       [2017: NCAA March Madness Application](https://meysubb.shinyapps.io/2017_marchmadness/)    
       [2016: NCAA March Madness Application](https://meysubb.shinyapps.io/NCAAB/)     
 
@@ -31,7 +31,7 @@ Note: Older versions are not hosted anymore, see github for code.
 
 ## Source Code
 
-Source Code Link: 
+Source Code Link:        
         [2017 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2017/Shiny_App/2017_MarchMadness)  
         [2016 SRC](https://github.com/meysubb/NCAAB_shiny_app/tree/master/2016).      
 
