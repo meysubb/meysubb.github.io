@@ -2,7 +2,7 @@
 layout: post
 title: "Getting betteR"
 description: "R tips and tricks"
-category: 
+category: rstats
 tags: [R]
 comments: false
 ---
