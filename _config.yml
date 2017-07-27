@@ -1,6 +1,6 @@
 name: Meyappan Subbaiah
 url: 'https://meysubb.github.io'
-description: 
+description: Meyappan
 
 exclude: [Gemfile, Gemfile.lock, README.md]
 markdown: kramdown
