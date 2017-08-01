@@ -7,7 +7,7 @@ Hey. I'm Meyappan. I'm a graduate student (Business Analytics) at the McCombs Sc
 
 Prior to UT, I received two degrees from Texas A&M, both in Nuclear Engineering (B.S and M.S). GiG'EM!
 
-You'll figure it out. Or Maybe I'll update y'all.
+You'll figure out the rest. 
 
 <p class="social-icons">
   <a href="https://twitter.com/msubbaiah1"><i class="fa fa-twitter fa-2x"></i></a>
