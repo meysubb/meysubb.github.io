@@ -2,8 +2,8 @@
 layout: post
 title: "Data Viz"
 description: "Data Viz Portfolio"
-category: rstats
-tags: [R]
+category: visualization
+tags: [R, python]
 comments: false
 ---
 
