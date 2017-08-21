@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Data Viz Portfolio"
-description: "Data Viz"
-category: Viz
+title: "Data Viz"
+description: "Data Viz Portfolio"
+category:
 tags: [Viz, R, Python]
 comments: false
 ---
