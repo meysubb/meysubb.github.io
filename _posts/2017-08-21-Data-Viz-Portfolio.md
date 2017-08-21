@@ -2,7 +2,7 @@
 layout: post
 title: "Data Viz Portfolio"
 description: "Data Viz"
-category: viz
+category: Viz
 tags: [Viz,R,Python]
 comments: false
 ---
