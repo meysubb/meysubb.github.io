@@ -7,7 +7,7 @@ tags: [R, python]
 comments: false
 ---
 
-Just wanted to share some data visualizations, I've created over the course of time.
+Just wanted to share some data visualizations, I've created over the course of time. Plus, I need a central location to look at them all, digging through files on my computer can get confusion.
 
 ## Cars Viz
 
@@ -17,6 +17,18 @@ Just wanted to share some data visualizations, I've created over the course of t
 
 ## Properties Viz
 
+Comparing green (eco-friendly) properties vs regular properties with respect to the different types of buildings (class). Classes are linked with the age of the property.
+
 ![_config.yml]({{ site.baseurl }}/images/Data_Viz/Green_Properties_Viz_2.png)
 
 [Reproducible R Code](https://github.com/meysubb/Viz_Portfolio/blob/master/R_Script/Green_Buildings_Viz_2_Script.R)
+
+## Austin Airport Data
+
+Studying delay patterns out of Austin-Bergstorm.
+
+![_config.yml]({{ site.baseurl }}/images/Data_Viz/Austin_Geo_Viz_3.png)
+
+![_config.yml]({{ site.baseurl }}/images/Data_Viz/Austin_Airport_Viz_4.png)
+
+[Reproducible R Code.](https://github.com/meysubb/Viz_Portfolio/blob/master/R_Script/Austin_Flights_Script.R)
