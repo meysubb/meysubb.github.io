@@ -7,7 +7,7 @@ tags: [R, python]
 comments: false
 ---
 
-Just wanted to share some data visualizations, I've created over the course of time. Plus, I need a central location to look at them all, digging through files on my computer can get confusion.
+Just wanted to share some data visualizations, I've created. Digging through the files on my computer can get confusing.
 
 ## Cars Viz
 
