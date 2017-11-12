@@ -12,18 +12,18 @@ Ah, finally college basketball season is upon us. We played in the only top 25 m
 Quick Notes
 -----------
 
-A few quick notes before we get started. Robert Williams is suspended for three games. JJ Caldwell is suspended for five games. Not sure if either made the trip, but I didn't see them on TV. On top of that, Hogg and Gilder just returned from suspension.
+Robert Williams is suspended for three games. JJ Caldwell is suspended for five games. Not sure if either made the trip, but I didn't see them on TV. On top of that, Hogg and Gilder just returned from suspension.
 
 ### Starting Five
 
 ** TAMU: Tyler Davis, Tony Trocha-Morales, Savion Flagg, Duane Wilson, Jay-Jay Chandler **
 ** WVU: Lamont West, Sagaba Konate, Wesley Harris, Jevon Carter, Daxter Miles Jr. **
 
-Let's get right to it then. Here is the breakdown of the game. For a lot of the first half, the Ags were just figuring out how to break the press. Welcome to college basketball freshman! After that, the Ags didn't really look back. Yep we fell prey to the press on back to back plays only one more time in the second half. WVU cashed in two 3 pointers. But outside of that, it was a strong showing.
+Let's get right to it then. Here is the breakdown of the game. For a lot of the first half, the Ags were just figuring out how to break the press. Welcome to college basketball freshmen! After that, the Ags didn't really look back. Yep we fell prey to the press on back to back plays only one more time in the second half. WVU cashed in two 3 pointers. But outside of that, it was a strong showing.
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_1/unnamed-chunk-1-1.png)
 
-We didn't make it to the line as much, but contrary to last year and the before WE CONVERTED FREE THROWS! This is a KEY for us going forward.
+We didn't make it to the line as much, but contrary to last year and the year before WE CONVERTED FREE THROWS! This is a KEY for us going forward.
 
 It was a remarkable shooting day from 3PT land and generally. Watching the game it seemed like WVU shot the 3 ball better, might just be the style they play that makes you believe that. Just want to harp on one last thing. A team that likes to press can be beaten by superior ball movement, look at the TAMU assist numbers!
 
@@ -45,17 +45,3 @@ Anyways, keeping track of player usage rates should become more interesting as w
 
 
 Definition of Usage Rate: Usage percentage is an estimate of the percentage of team plays used by a player while he was on the floor.
-
-### Interesting Plays
-
-My favorite play is the elevator screen. Of course Bob Huggins came out of the gate and ran that in the first few minutes of the game.
-
-![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_1/elevator_screen_wvu.gif)
-
-Alright for the famed WVU press, this is how the AGs started to break it down. Keep the ball in the center of the court and skip passes. Loved the reverse pivots from our guards. It's great to have guard play again, especially after last season!
-
-![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_1/Texas_A_M_vs_West_Virginia_Basketball_2017_11_10.gif)
-
-This play is just a thing of beauty. I'm pretty excited, Tyler Davis has worked on his conditioning again. This should really help the Ags out when Williams returns.
-
-![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_1/davis_moves.gif)
