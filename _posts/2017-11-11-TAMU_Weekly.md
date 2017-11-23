@@ -2,7 +2,7 @@
 layout: post
 title: "Weekly Recap TAMU MBB"
 description: "TAMU MBB Weekly Recaps"
-category: sports analytics
+category: tamu mbb
 tags: [college basketball, R, college sports]
 comments: false
 ---
@@ -16,16 +16,16 @@ Robert Williams is suspended for three games. JJ Caldwell is suspended for five 
 
 ### Starting Five
 
-** TAMU: Tyler Davis, Tony Trocha-Morales, Savion Flagg, Duane Wilson, Jay-Jay Chandler **
-** WVU: Lamont West, Sagaba Konate, Wesley Harris, Jevon Carter, Daxter Miles Jr. **
+**TAMU: Tyler Davis, Tony Trocha-Morales, Savion Flagg, Duane Wilson, Jay-Jay Chandler**
+**WVU: Lamont West, Sagaba Konate, Wesley Harris, Jevon Carter, Daxter Miles Jr.**
 
 Let's get right to it then. Here is the breakdown of the game. For a lot of the first half, the Ags were just figuring out how to break the press. Welcome to college basketball freshmen! After that, the Ags didn't really look back. Yep we fell prey to the press on back to back plays only one more time in the second half. WVU cashed in two 3 pointers. But outside of that, it was a strong showing.
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_1/unnamed-chunk-1-1.png)
 
-We didn't make it to the line as much, but contrary to last year and the year before WE CONVERTED FREE THROWS! This is a KEY for us going forward.
+We made it to the line a bit more, but contrary to last year and the year before WE CONVERTED FREE THROWS! This is a KEY for us going forward.
 
-It was a remarkable shooting day from 3PT land and generally. Watching the game it seemed like WVU shot the 3 ball better, might just be the style they play that makes you believe that. Just want to harp on one last thing. A team that likes to press can be beaten by superior ball movement, look at the TAMU assist numbers!
+It was a remarkable shooting day from 3PT land and generally. Watching the game it seemed like WVU shot the 3 ball better, might just be the style they play that makes you believe that. Just want to harp on one last thing. A team that likes to press can be beaten by superior ball movement and preventing second chances, look at the TAMU assist and rebound numbers!
 
 Note: eFG adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal. For example, suppose Player A goes 4 for 10 with 2 threes, while Player B goes 5 for 10 with 0 threes. Each player would have 10 points from field goals, and thus would have the same effective field goal percentage (50%).
 
