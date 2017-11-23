@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Weekly Recap TAMU MBB"
+title: "Week 2+Legends Classic Recap TAMU MBB"
 description: "TAMU MBB Weekly Recaps"
 category: tamu mbb
 tags: [college basketball, R, college sports]
@@ -17,18 +17,18 @@ Ranked 16th to start the week. Robert Williams came back against OSU, we still h
 
 #### TAMU vs UCSB
 
-**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson **
-**UCSB: Leland King II, Jalen Canty, Max Heidegger, Christian Terrell, Gabe Vincent **
+**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson**  
+**UCSB: Leland King II, Jalen Canty, Max Heidegger, Christian Terrell, Gabe Vincent**  
 
 #### TAMU vs. OSU
 
-**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson**
-**OSU: Mitchell Solomon, Lucas N'Guessan, Lindy Waters III, Kendall Smith, Tavarius Shine**
+**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson**  
+**OSU: Mitchell Solomon, Lucas N'Guessan, Lindy Waters III, Kendall Smith, Tavarius Shine**  
 
 #### TAMU vs. Penn State
 
-**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson**
-**PSU: Lamar Stevens, Mike Watkins, Tony Carr, Shep Garner, Josh Reaves**
+**TAMU: Tyler Davis, Tony Trocha-Morales, DJ Hogg, Admon Gilder, Duane Wilson**   
+**PSU: Lamar Stevens, Mike Watkins, Tony Carr, Shep Garner, Josh Reaves**  
 
 Let's get right to it then. Here is the breakdown of the three games.
 
