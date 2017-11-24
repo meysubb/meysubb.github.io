@@ -39,7 +39,7 @@ No issues against UCSB. We broke away from the start. Loving the assist numbers,
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_2/unnamed-chunk-6-1.png)
 
-Started to pull away after the first 10 minutes of the game. Looks like Williams made a difference and helped us dominate the boards. Surprisngly the asisst numbers a bit low here in comparision to previous games. A point of concern, we only shot 9 Free Throws. With the improved FT shooting it would be nice to see an emphasis to go to the line more!
+Started to pull away after the first 10 minutes of the game. Looks like Williams made a difference and helped us dominate the boards. Surprisingly the assist numbers a bit low here in comparison to previous games. A point of concern, we only shot 9 Free Throws. With the improved FT shooting it would be nice to see an emphasis to go to the line more!
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_2/unnamed-chunk-7-1.png)
 
@@ -51,12 +51,12 @@ A slight point of concern is our eagerness to block a lot of shots, and gives th
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_2/unnamed-chunk-8-1.png)
 
-Williams ddidn't start either game in the Legends Classic, wonder how the spreads will change with him in the starting limeup. Who knows? Kennedy's moves with the starting lineup are going to be huge this year. There's a lot of potential for the second unit to play a big factor, as we are seeing already.
+Williams didn't start either game in the Legends Classic, wonder how the spreads will change with him in the starting lineup. Who knows? Kennedy's moves with the starting lineup are going to be huge this year. There's a lot of potential for the second unit to play a big factor, as we are seeing already.
 
 ### Assist Maps
 
 ![_config.yml]({{ site.baseurl }}/images/TAMU_MBB/Week_2/unnamed-chunk-9-1.png)
 
-I've been playing with these for a bit and finally have a working product that i like. These are the three assist maps for the games this past week.
+I've been playing with these for a bit and finally have a working product that I like. These are the three assist maps for the games this past week.
 
 Arrows heading out are assists by that player, arrows coming in show who scored off the assist. So Gilder was the leading assist man against UCSB, Wilson against OSU and Hogg against PSU. These plots are also nice to see offensive involvement.
