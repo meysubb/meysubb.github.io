@@ -22,7 +22,7 @@ Prediction accuracies will be updated as bowl season progresses. I'm going to in
 1. Personal picks,
 2. Algorithm 1 - Random forest,
 3. Algorithm 2 - XGBoost,
-4. Algorithm 3 - Suppoert Vector Machines (SVM)
+4. Algorithm 3 - Support Vector Machines (SVM)
 
 Let's look at what each algorithm thinks is important. These were all the possible stats available for all 128 teams in NCAA-FBS (Division I).
 
@@ -43,7 +43,7 @@ Let's look at what each algorithm thinks is important. These were all the possib
 Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost
 -----------------------------------------------------
 
-Random Forests (RF) are an ensemble learning method using decision trees. The model has the capabillity to select and identify the important variables. XGboost is an *extreme gradient boosting* method applied to decision trees. Similarily to RF it also has the capabillity to identify important variables.
+Random Forests (RF) are an ensemble learning method using decision trees. The model has the capability to select and identify the important variables. XGboost is an *extreme gradient boosting* method applied to decision trees. Similarly to RF it also has the capability to identify important variables.
 
 Let's see what we've got here.
 
