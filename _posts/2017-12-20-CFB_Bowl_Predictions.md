@@ -11,7 +11,7 @@ comments: false
 -   [Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost](#algorithm-1---random-forest-vs.-algorithm-2---xgboost)
 -   [Predictions](#predictions)
 
-Last year at work, I was part of the college bowl pick'em. Nothing new, I used to do the CFB bowl pick'ems with my college roommates and others. But last year, I decided to scrape the data and use differnt Machine Learning (ML) algorithms to predict winners.
+Last year at work, I was part of the college bowl pick'em. Nothing new, I used to do the CFB bowl pick'ems with my college roommates and others. But last year, I decided to scrape the data and use different Machine Learning (ML) algorithms to predict winners.
 
 Note: I treated this as a classification problem, 1 - Win, 0 - Lose. For those curious about the ML algorithms and the parameters selected, I'll be writing up a follow-up post. Should be out soon.
 
