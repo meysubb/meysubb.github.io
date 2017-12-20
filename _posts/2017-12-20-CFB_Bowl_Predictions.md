@@ -7,6 +7,7 @@ tags: [college football, R, python, college sports]
 comments: false
 ---
 
+
 -   [Bowl Predictions](#bowl-predictions)
 -   [Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost](#algorithm-1---random-forest-vs.-algorithm-2---xgboost)
 -   [Predictions](#predictions)
@@ -28,16 +29,16 @@ Let's look at what each algorithm thinks is important. These were all the possib
 
     ##  [1] "3rd Down Conversion Pct"         "3rd Down Conversion Pct Defense"
     ##  [3] "4th Down Conversion Pct"         "4th Down Conversion Pct Defense"
-    ##  [5] "Fewest Penalties Per Game"       "Fewest Penalty Yards Per Game"
-    ##  [7] "First Downs Defense"             "First Downs Offense"
-    ##  [9] "Kickoff Returns"                 "Net Punting"
-    ## [11] "Passing Offense"                 "Passing Yards Allowed"
-    ## [13] "Punt Returns"                    "Red Zone Defense"
-    ## [15] "Red Zone Offense"                "Rushing Defense"
-    ## [17] "Rushing Offense"                 "Scoring Defense"
-    ## [19] "Scoring Offense"                 "Team Passing Efficiency"
-    ## [21] "Team Passing Efficiency Defense" "T.O.P"
-    ## [23] "Total Defense"                   "Total Offense"
+    ##  [5] "Fewest Penalties Per Game"       "Fewest Penalty Yards Per Game"  
+    ##  [7] "First Downs Defense"             "First Downs Offense"            
+    ##  [9] "Kickoff Returns"                 "Net Punting"                    
+    ## [11] "Passing Offense"                 "Passing Yards Allowed"          
+    ## [13] "Punt Returns"                    "Red Zone Defense"               
+    ## [15] "Red Zone Offense"                "Rushing Defense"                
+    ## [17] "Rushing Offense"                 "Scoring Defense"                
+    ## [19] "Scoring Offense"                 "Team Passing Efficiency"        
+    ## [21] "Team Passing Efficiency Defense" "T.O.P"                          
+    ## [23] "Total Defense"                   "Total Offense"                  
     ## [25] "Turnover Margin"
 
 Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost
