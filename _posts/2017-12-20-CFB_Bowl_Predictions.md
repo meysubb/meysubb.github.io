@@ -7,7 +7,6 @@ tags: [college football, R, python, college sports]
 comments: false
 ---
 
-
 -   [Bowl Predictions](#bowl-predictions)
 -   [Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost](#algorithm-1---random-forest-vs.-algorithm-2---xgboost)
 -   [Predictions](#predictions)
@@ -61,1109 +60,1109 @@ Anyways let's take a look at the predictions.
 Predictions
 -----------
 
-<table class="table table-condensed">
+<table class="table table-hover" style="font-size: 10px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Away Team
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Home Team
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Algorithm 1
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 A1 - Confidence
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Algorithm 2
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 A2 - Confidence
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Algorithm 3
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 A3 - Confidence
 </th>
-<th style="text-align:right;">
+<th style="text-align:left;font-weight: bold;color: white;background-color: #D7261E;">
 Actual
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Troy
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 North Texas
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> North Texas </span>
+<td style="text-align:left;">
+<span style="color: red;">North Texas</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 79.20%">0.74</span>
+<td style="text-align:left;">
+0.74
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> North Texas </span>
+<td style="text-align:left;">
+<span style="color: red;">North Texas</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> North Texas </span>
+<td style="text-align:left;">
+<span style="color: red;">North Texas</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 81.60%">0.77</span>
+<td style="text-align:left;">
+0.77
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Troy
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Georgia St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Western Ky.
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Western Ky. </span>
+<td style="text-align:left;">
+<span style="color: red;">Western Ky.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 21.60%">0.02</span>
+<td style="text-align:left;">
+0.02
 </td>
-<td style="text-align:right;">
-<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Georgia St. </span>
+<td style="text-align:left;">
+<span style="color: green;">Georgia St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 28.80%">0.11</span>
+<td style="text-align:left;">
+0.11
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Western Ky. </span>
+<td style="text-align:left;">
+<span style="color: red;">Western Ky.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 55.20%">0.44</span>
+<td style="text-align:left;">
+0.44
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Georgia St.
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Boise St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Oregon
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Oregon </span>
+<td style="text-align:left;">
+<span style="color: red;">Oregon</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 84.80%">0.81</span>
+<td style="text-align:left;">
+0.81
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Oregon </span>
+<td style="text-align:left;">
+<span style="color: red;">Oregon</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Oregon </span>
+<td style="text-align:left;">
+<span style="color: red;">Oregon</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 72.80%">0.66</span>
+<td style="text-align:left;">
+0.66
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Boise St.
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Marshall
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Colorado St.
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Colorado St. </span>
+<td style="text-align:left;">
+<span style="color: red;">Colorado St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 86.40%">0.83</span>
+<td style="text-align:left;">
+0.83
 </td>
-<td style="text-align:right;">
-<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Marshall </span>
+<td style="text-align:left;">
+<span style="color: green;">Marshall</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 90.40%">0.88</span>
+<td style="text-align:left;">
+0.88
 </td>
-<td style="text-align:right;">
-<span style="color: red"> <i class="glyphicon glyphicon-remove"></i> Colorado St. </span>
+<td style="text-align:left;">
+<span style="color: red;">Colorado St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 83.20%">0.79</span>
+<td style="text-align:left;">
+0.79
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Marshall
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Fla. Atlantic
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Akron
 </td>
-<td style="text-align:right;">
-<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Fla. Atlantic </span>
+<td style="text-align:left;">
+<span style="color: green;">Fla. Atlantic</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 81.60%">0.77</span>
+<td style="text-align:left;">
+0.77
 </td>
-<td style="text-align:right;">
-<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Fla. Atlantic </span>
+<td style="text-align:left;">
+<span style="color: green;">Fla. Atlantic</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 97.60%">0.97</span>
+<td style="text-align:left;">
+0.97
 </td>
-<td style="text-align:right;">
-<span style="color: green"> <i class="glyphicon glyphicon-ok"></i> Fla. Atlantic </span>
+<td style="text-align:left;">
+<span style="color: green;">Fla. Atlantic</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 76.80%">0.71</span>
+<td style="text-align:left;">
+0.71
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Fla. Atlantic
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 SMU
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Louisiana Tech
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> SMU </span>
+<td style="text-align:left;">
+<span style="color: grey;">SMU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 35.20%">0.19</span>
+<td style="text-align:left;">
+0.19
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> SMU </span>
+<td style="text-align:left;">
+<span style="color: grey;">SMU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 83.20%">0.79</span>
+<td style="text-align:left;">
+0.79
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Louisiana Tech </span>
+<td style="text-align:left;">
+<span style="color: grey;">Louisiana Tech</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 24.00%">0.05</span>
+<td style="text-align:left;">
+0.05
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Temple
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 FIU
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> FIU </span>
+<td style="text-align:left;">
+<span style="color: grey;">FIU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 74.40%">0.68</span>
+<td style="text-align:left;">
+0.68
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Temple </span>
+<td style="text-align:left;">
+<span style="color: grey;">Temple</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 60.00%">0.50</span>
+<td style="text-align:left;">
+0.50
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> FIU </span>
+<td style="text-align:left;">
+<span style="color: grey;">FIU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 49.60%">0.37</span>
+<td style="text-align:left;">
+0.37
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 UAB
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Ohio
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Ohio </span>
+<td style="text-align:left;">
+<span style="color: grey;">Ohio</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 68.00%">0.60</span>
+<td style="text-align:left;">
+0.60
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Ohio </span>
+<td style="text-align:left;">
+<span style="color: grey;">Ohio</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Ohio </span>
+<td style="text-align:left;">
+<span style="color: grey;">Ohio</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 71.20%">0.64</span>
+<td style="text-align:left;">
+0.64
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Wyoming
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Central Mich.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Central Mich. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Central Mich.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 48.80%">0.36</span>
+<td style="text-align:left;">
+0.36
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Central Mich. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Central Mich.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Central Mich. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Central Mich.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 80.00%">0.75</span>
+<td style="text-align:left;">
+0.75
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 South Fla.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Texas Tech
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> South Fla. </span>
+<td style="text-align:left;">
+<span style="color: grey;">South Fla.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 44.00%">0.30</span>
+<td style="text-align:left;">
+0.30
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> South Fla. </span>
+<td style="text-align:left;">
+<span style="color: grey;">South Fla.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 74.40%">0.68</span>
+<td style="text-align:left;">
+0.68
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> South Fla. </span>
+<td style="text-align:left;">
+<span style="color: grey;">South Fla.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 47.20%">0.34</span>
+<td style="text-align:left;">
+0.34
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Army West Point
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 San Diego St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Army West Point </span>
+<td style="text-align:left;">
+<span style="color: grey;">Army West Point</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 35.20%">0.19</span>
+<td style="text-align:left;">
+0.19
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Army West Point </span>
+<td style="text-align:left;">
+<span style="color: grey;">Army West Point</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 49.60%">0.37</span>
+<td style="text-align:left;">
+0.37
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Army West Point </span>
+<td style="text-align:left;">
+<span style="color: grey;">Army West Point</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 50.40%">0.38</span>
+<td style="text-align:left;">
+0.38
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Appalachian St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Toledo
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Toledo </span>
+<td style="text-align:left;">
+<span style="color: grey;">Toledo</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 63.20%">0.54</span>
+<td style="text-align:left;">
+0.54
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Appalachian St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Appalachian St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 87.20%">0.84</span>
+<td style="text-align:left;">
+0.84
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Toledo </span>
+<td style="text-align:left;">
+<span style="color: grey;">Toledo</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 54.40%">0.43</span>
+<td style="text-align:left;">
+0.43
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Fresno St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Houston
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Houston </span>
+<td style="text-align:left;">
+<span style="color: grey;">Houston</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 84.00%">0.80</span>
+<td style="text-align:left;">
+0.80
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Houston </span>
+<td style="text-align:left;">
+<span style="color: grey;">Houston</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Houston </span>
+<td style="text-align:left;">
+<span style="color: grey;">Houston</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 78.40%">0.73</span>
+<td style="text-align:left;">
+0.73
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 West Virginia
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Utah
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Utah </span>
+<td style="text-align:left;">
+<span style="color: grey;">Utah</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 51.20%">0.39</span>
+<td style="text-align:left;">
+0.39
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> West Virginia </span>
+<td style="text-align:left;">
+<span style="color: grey;">West Virginia</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 98.40%">0.98</span>
+<td style="text-align:left;">
+0.98
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> West Virginia </span>
+<td style="text-align:left;">
+<span style="color: grey;">West Virginia</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 25.60%">0.07</span>
+<td style="text-align:left;">
+0.07
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Duke
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Northern Ill.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northern Ill. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northern Ill.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 72.00%">0.65</span>
+<td style="text-align:left;">
+0.65
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northern Ill. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northern Ill.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 96.80%">0.96</span>
+<td style="text-align:left;">
+0.96
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northern Ill. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northern Ill.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 56.00%">0.45</span>
+<td style="text-align:left;">
+0.45
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 UCLA
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Kansas St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCLA </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCLA</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 84.00%">0.80</span>
+<td style="text-align:left;">
+0.80
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCLA </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCLA</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCLA </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCLA</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 48.00%">0.35</span>
+<td style="text-align:left;">
+0.35
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Florida St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Southern Miss.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Southern Miss. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Southern Miss.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 60.00%">0.50</span>
+<td style="text-align:left;">
+0.50
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Southern Miss. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Southern Miss.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 96.80%">0.96</span>
+<td style="text-align:left;">
+0.96
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Southern Miss. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Southern Miss.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 59.20%">0.49</span>
+<td style="text-align:left;">
+0.49
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Boston College
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Iowa
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Boston College </span>
+<td style="text-align:left;">
+<span style="color: grey;">Boston College</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 49.60%">0.37</span>
+<td style="text-align:left;">
+0.37
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Boston College </span>
+<td style="text-align:left;">
+<span style="color: grey;">Boston College</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 52.80%">0.41</span>
+<td style="text-align:left;">
+0.41
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Boston College </span>
+<td style="text-align:left;">
+<span style="color: grey;">Boston College</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 27.20%">0.09</span>
+<td style="text-align:left;">
+0.09
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Arizona
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Purdue
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Arizona </span>
+<td style="text-align:left;">
+<span style="color: grey;">Arizona</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 41.60%">0.27</span>
+<td style="text-align:left;">
+0.27
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Arizona </span>
+<td style="text-align:left;">
+<span style="color: grey;">Arizona</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 55.20%">0.44</span>
+<td style="text-align:left;">
+0.44
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Arizona </span>
+<td style="text-align:left;">
+<span style="color: grey;">Arizona</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 83.20%">0.79</span>
+<td style="text-align:left;">
+0.79
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Texas
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Missouri
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Missouri </span>
+<td style="text-align:left;">
+<span style="color: grey;">Missouri</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 80.00%">0.75</span>
+<td style="text-align:left;">
+0.75
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Missouri </span>
+<td style="text-align:left;">
+<span style="color: grey;">Missouri</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Missouri </span>
+<td style="text-align:left;">
+<span style="color: grey;">Missouri</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 87.20%">0.84</span>
+<td style="text-align:left;">
+0.84
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Virginia
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Navy
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Navy </span>
+<td style="text-align:left;">
+<span style="color: grey;">Navy</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 92.00%">0.90</span>
+<td style="text-align:left;">
+0.90
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Navy </span>
+<td style="text-align:left;">
+<span style="color: grey;">Navy</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Navy </span>
+<td style="text-align:left;">
+<span style="color: grey;">Navy</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 93.60%">0.92</span>
+<td style="text-align:left;">
+0.92
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Oklahoma St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Virginia Tech
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Oklahoma St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Oklahoma St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 46.40%">0.33</span>
+<td style="text-align:left;">
+0.33
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Oklahoma St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Oklahoma St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 85.60%">0.82</span>
+<td style="text-align:left;">
+0.82
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Oklahoma St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Oklahoma St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 54.40%">0.43</span>
+<td style="text-align:left;">
+0.43
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Stanford
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TCU
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> TCU </span>
+<td style="text-align:left;">
+<span style="color: grey;">TCU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 60.00%">0.50</span>
+<td style="text-align:left;">
+0.50
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> TCU </span>
+<td style="text-align:left;">
+<span style="color: grey;">TCU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> TCU </span>
+<td style="text-align:left;">
+<span style="color: grey;">TCU</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 63.20%">0.54</span>
+<td style="text-align:left;">
+0.54
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Michigan St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Washington St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Washington St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Washington St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 58.40%">0.48</span>
+<td style="text-align:left;">
+0.48
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Washington St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Washington St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Washington St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Washington St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 60.80%">0.51</span>
+<td style="text-align:left;">
+0.51
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Wake Forest
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Texas A&M
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Texas A&M </span>
+<td style="text-align:left;">
+<span style="color: grey;">Texas A&M</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 32.80%">0.16</span>
+<td style="text-align:left;">
+0.16
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Wake Forest </span>
+<td style="text-align:left;">
+<span style="color: grey;">Wake Forest</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 64.00%">0.55</span>
+<td style="text-align:left;">
+0.55
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Texas A&M </span>
+<td style="text-align:left;">
+<span style="color: grey;">Texas A&M</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 35.20%">0.19</span>
+<td style="text-align:left;">
+0.19
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Kentucky
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Northwestern
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northwestern </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northwestern</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 75.20%">0.69</span>
+<td style="text-align:left;">
+0.69
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northwestern </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northwestern</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Northwestern </span>
+<td style="text-align:left;">
+<span style="color: grey;">Northwestern</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 47.20%">0.34</span>
+<td style="text-align:left;">
+0.34
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 New Mexico St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Utah St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Utah St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Utah St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 61.60%">0.52</span>
+<td style="text-align:left;">
+0.52
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> New Mexico St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">New Mexico St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 95.20%">0.94</span>
+<td style="text-align:left;">
+0.94
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Utah St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Utah St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 38.40%">0.23</span>
+<td style="text-align:left;">
+0.23
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Ohio St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Southern California
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Southern California </span>
+<td style="text-align:left;">
+<span style="color: grey;">Southern California</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 43.20%">0.29</span>
+<td style="text-align:left;">
+0.29
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Ohio St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Ohio St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 60.00%">0.50</span>
+<td style="text-align:left;">
+0.50
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Ohio St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Ohio St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 33.60%">0.17</span>
+<td style="text-align:left;">
+0.17
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Louisville
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Mississippi St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Mississippi St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Mississippi St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 40.80%">0.26</span>
+<td style="text-align:left;">
+0.26
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Mississippi St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Mississippi St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 97.60%">0.97</span>
+<td style="text-align:left;">
+0.97
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Louisville </span>
+<td style="text-align:left;">
+<span style="color: grey;">Louisville</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 35.20%">0.19</span>
+<td style="text-align:left;">
+0.19
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Iowa St.
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Memphis
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Memphis </span>
+<td style="text-align:left;">
+<span style="color: grey;">Memphis</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 51.20%">0.39</span>
+<td style="text-align:left;">
+0.39
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Memphis </span>
+<td style="text-align:left;">
+<span style="color: grey;">Memphis</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Memphis </span>
+<td style="text-align:left;">
+<span style="color: grey;">Memphis</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 83.20%">0.79</span>
+<td style="text-align:left;">
+0.79
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Washington
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Penn St.
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Penn St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Penn St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 20.80%">0.01</span>
+<td style="text-align:left;">
+0.01
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Penn St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Penn St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Penn St. </span>
+<td style="text-align:left;">
+<span style="color: grey;">Penn St.</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 49.60%">0.37</span>
+<td style="text-align:left;">
+0.37
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Miami (FL)
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Wisconsin
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Wisconsin </span>
+<td style="text-align:left;">
+<span style="color: grey;">Wisconsin</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 85.60%">0.82</span>
+<td style="text-align:left;">
+0.82
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Wisconsin </span>
+<td style="text-align:left;">
+<span style="color: grey;">Wisconsin</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 100.00%">1.00</span>
+<td style="text-align:left;">
+1.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Wisconsin </span>
+<td style="text-align:left;">
+<span style="color: grey;">Wisconsin</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 82.40%">0.78</span>
+<td style="text-align:left;">
+0.78
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Michigan
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 South Carolina
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Michigan </span>
+<td style="text-align:left;">
+<span style="color: grey;">Michigan</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 53.60%">0.42</span>
+<td style="text-align:left;">
+0.42
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Michigan </span>
+<td style="text-align:left;">
+<span style="color: grey;">Michigan</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 71.20%">0.64</span>
+<td style="text-align:left;">
+0.64
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Michigan </span>
+<td style="text-align:left;">
+<span style="color: grey;">Michigan</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 23.20%">0.04</span>
+<td style="text-align:left;">
+0.04
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Auburn
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 UCF
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCF </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCF</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 20.80%">0.01</span>
+<td style="text-align:left;">
+0.01
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCF </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCF</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 98.40%">0.98</span>
+<td style="text-align:left;">
+0.98
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> UCF </span>
+<td style="text-align:left;">
+<span style="color: grey;">UCF</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 31.20%">0.14</span>
+<td style="text-align:left;">
+0.14
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Notre Dame
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 LSU
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Notre Dame </span>
+<td style="text-align:left;">
+<span style="color: grey;">Notre Dame</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 32.80%">0.16</span>
+<td style="text-align:left;">
+0.16
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Notre Dame </span>
+<td style="text-align:left;">
+<span style="color: grey;">Notre Dame</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 74.40%">0.68</span>
+<td style="text-align:left;">
+0.68
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Notre Dame </span>
+<td style="text-align:left;">
+<span style="color: grey;">Notre Dame</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 47.20%">0.34</span>
+<td style="text-align:left;">
+0.34
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Oklahoma
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Georgia
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Georgia </span>
+<td style="text-align:left;">
+<span style="color: grey;">Georgia</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 44.00%">0.30</span>
+<td style="text-align:left;">
+0.30
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Oklahoma </span>
+<td style="text-align:left;">
+<span style="color: grey;">Oklahoma</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 91.20%">0.89</span>
+<td style="text-align:left;">
+0.89
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Oklahoma </span>
+<td style="text-align:left;">
+<span style="color: grey;">Oklahoma</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 30.40%">0.13</span>
+<td style="text-align:left;">
+0.13
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
 <tr>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Clemson
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 Alabama
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Alabama </span>
+<td style="text-align:left;">
+<span style="color: grey;">Alabama</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 20.00%">0.00</span>
+<td style="text-align:left;">
+0.00
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Alabama </span>
+<td style="text-align:left;">
+<span style="color: grey;">Alabama</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 99.20%">0.99</span>
+<td style="text-align:left;">
+0.99
 </td>
-<td style="text-align:right;">
-<span style="color: grey"> <i class="glyphicon glyphicon-remove"></i> Alabama </span>
+<td style="text-align:left;">
+<span style="color: grey;">Alabama</span>
 </td>
-<td style="text-align:right;">
-<span style="display: inline-block; direction: rtl; border-radius: 4px; padding-right: 2px; background-color: pink; width: 34.40%">0.18</span>
+<td style="text-align:left;">
+0.18
 </td>
-<td style="text-align:right;">
+<td style="text-align:left;">
 TBD
 </td>
 </tr>
