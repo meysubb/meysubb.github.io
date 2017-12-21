@@ -246,25 +246,25 @@ SMU
 Louisiana Tech
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">SMU</span>
+<span style="color: red;">SMU</span>
 </td>
 <td style="text-align:left;">
 0.19
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">SMU</span>
+<span style="color: red;">SMU</span>
 </td>
 <td style="text-align:left;">
 0.79
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Louisiana Tech</span>
+<span style="color: green;">Louisiana Tech</span>
 </td>
 <td style="text-align:left;">
 0.05
 </td>
 <td style="text-align:left;">
-TBD
+Louisiana Tech
 </td>
 </tr>
 <tr>
