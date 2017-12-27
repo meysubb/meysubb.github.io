@@ -457,8 +457,7 @@ svm_Radial
 
 Feature Importance
 --------
-
-<iframe src="/assets/plots/vbar.html"
+<iframe src="/images/plots/vbar.html"
     style="max-width = 100%"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
