@@ -82,7 +82,7 @@ x <- setdiff(names(ind_game_df), y)
 Models
 ------
 
-I'm going to use the `h20` package to build my tree based methods. In the past, I've found them to be more computationally efficient by leveraging parallel proccesses.
+I'm going to use the `h20` package to build my tree based methods. In the past, I've found them to be more computationally efficient by leveraging parallel processes.
 
 ### Random Forests (RF)
 
@@ -126,34 +126,7 @@ for(i in 1:nrow(tunegrid)){
   tunegrid$acc[i] <- sum(diag(conf_mat))/sum(conf_mat)
 }
 ```
-
-    ## [1] "Working on 3.7037037037037% "
-    ## [1] "Working on 7.40740740740741% "
-    ## [1] "Working on 11.1111111111111% "
-    ## [1] "Working on 14.8148148148148% "
-    ## [1] "Working on 18.5185185185185% "
-    ## [1] "Working on 22.2222222222222% "
-    ## [1] "Working on 25.9259259259259% "
-    ## [1] "Working on 29.6296296296296% "
-    ## [1] "Working on 33.3333333333333% "
-    ## [1] "Working on 37.037037037037% "
-    ## [1] "Working on 40.7407407407407% "
-    ## [1] "Working on 44.4444444444444% "
-    ## [1] "Working on 48.1481481481481% "
-    ## [1] "Working on 51.8518518518518% "
-    ## [1] "Working on 55.5555555555556% "
-    ## [1] "Working on 59.2592592592593% "
-    ## [1] "Working on 62.962962962963% "
-    ## [1] "Working on 66.6666666666667% "
-    ## [1] "Working on 70.3703703703704% "
-    ## [1] "Working on 74.0740740740741% "
-    ## [1] "Working on 77.7777777777778% "
-    ## [1] "Working on 81.4814814814815% "
-    ## [1] "Working on 85.1851851851852% "
-    ## [1] "Working on 88.8888888888889% "
-    ## [1] "Working on 92.5925925925926% "
-    ## [1] "Working on 96.2962962962963% "
-    ## [1] "Working on 100% "
+[To BE CONTINUED]
 
 ### XGBoost (XGB)
 
@@ -186,50 +159,7 @@ for(i in 1:nrow(xg_tunegrid)){
 }
 ```
 
-    ## [1] "Working on 2.5% "
-    ## [1] "Working on 5% "
-    ## [1] "Working on 7.5% "
-    ## [1] "Working on 10% "
-    ## [1] "Working on 12.5% "
-    ## [1] "Working on 15% "
-    ## [1] "Working on 17.5% "
-    ## [1] "Working on 20% "
-    ## [1] "Working on 22.5% "
-    ## [1] "Working on 25% "
-    ## [1] "Working on 27.5% "
-    ## [1] "Working on 30% "
-    ## [1] "Working on 32.5% "
-    ## [1] "Working on 35% "
-    ## [1] "Working on 37.5% "
-    ## [1] "Working on 40% "
-    ## [1] "Working on 42.5% "
-    ## [1] "Working on 45% "
-    ## [1] "Working on 47.5% "
-    ## [1] "Working on 50% "
-    ## [1] "Working on 52.5% "
-    ## [1] "Working on 55% "
-    ## [1] "Working on 57.5% "
-    ## [1] "Working on 60% "
-    ## [1] "Working on 62.5% "
-    ## [1] "Working on 65% "
-    ## [1] "Working on 67.5% "
-    ## [1] "Working on 70% "
-    ## [1] "Working on 72.5% "
-    ## [1] "Working on 75% "
-    ## [1] "Working on 77.5% "
-    ## [1] "Working on 80% "
-    ## [1] "Working on 82.5% "
-    ## [1] "Working on 85% "
-    ## [1] "Working on 87.5% "
-    ## [1] "Working on 90% "
-    ## [1] "Working on 92.5% "
-    ## [1] "Working on 95% "
-    ## [1] "Working on 97.5% "
-    ## [1] "Working on 100% "
-
-    ## Are you sure you want to shutdown the H2O instance running at http://localhost:54321/ (Y/N)?
-
-    ## [1] TRUE
+[To BE CONTINUED]
 
 ### Support Vector Machines (SVM)
 
