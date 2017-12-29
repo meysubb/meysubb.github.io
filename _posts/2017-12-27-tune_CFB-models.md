@@ -135,6 +135,12 @@ for(i in 1:nrow(tunegrid)){
     frameborder="0">
 </iframe>
 
+The best model was found with a minimum of 5 rows in each split. Playing with this parameter allows us to control potential over-fitting by isolating some splits down to exactly one row.
+
+The best random forest model was selected with sampling 12 variables `mtry`, either 500 or 700 trees per forest `ntree`, and 5 rows per split `min_rows`. The accuracy here is about **81.4%**. So from the 193 games in the testing set, it misclassify wins for 36 games. Not too shabby.
+
+While Random Forests are pretty good, I've heard even greater things about gradient boosting trees, let's check that out next!
+
 ### XGBoost (XGB)
 
 Simiarly for XGBoost, a grid-search approach was taken to identify the optimal `learn_rate`, `max depth`, and `booster`. Note for classification models, only gbtree and dart are valid booster functions.
@@ -175,6 +181,13 @@ for(i in 1:nrow(xg_tunegrid)){
     seamless="seamless"
     frameborder="0">
 </iframe>
+
+Interestingly enough, the booster functions didn't change the out-of-sample accuracies. Instead they were the exact same for every iteration of the learning rate and the tree depth. Therefore, I stuck with the gbtree as that is the default in classification methods.
+
+The best model selected here has a learning rate `learn_rate` of 0.1, and a tree depth `max_depth` of 6. The accuracy here is about **83.5%**. So from the 193 games in the testing set, it misclassify wins for 32 games. A slight improvement from the random forests method.
+
+Diversity is good and I wanted to move away from the tree models. So let's check out Support Vector Machines (SVM).
+
 
 ### Support Vector Machines (SVM)
 
@@ -218,7 +231,17 @@ svm_Radial <- train(home_win ~., data = ind_game_df, method = "svmRadial",
     frameborder="0">
 </iframe>
 
+The main parameter to identify for SVMs is slack, since it controls the margins. The tradeoff that we look for in slack is between fitting simple functions and fitting to the data exactly. Since we use RBF for the kernel, we also need to optimize the sigma value.
+
+The best model for SVM obtained a `C` (slack) of 1 and a `sigma` of 0.01. The accuracy here is about **88%**. So from the 193 games in the testing set, it misclassify wins for 23 games. The best so far.
+
+Instead of just selecting SVM to predict bowl games, I went with all three to see how they perform against each other. To see how the predictions are doing, see the following [post](http://meysubb.github.io/sports%20analytics/2017/12/20/CFB_Bowl_Predictions.html).
+
+That sums up how the models were put together, but first I'd like to discuss some potential pitfalls. Sadly nothing is ever perfect and I'm still finding ways to improve these methods.
+
 Concerns
 --------
 
 Caveat: I used home and away as just placeholders to allow me to pit teams against each other. There was no in-built
+
+[To Be finished]
