@@ -998,6 +998,8 @@ So much for all the hype on Crowell, Johnson is the guy to have from Cleveland w
 
 ## Code
 
+I performed everything in R, data extraction, analysis and even visualization. I normally prefer to go with Python and BeautifulSoup, but it was pretty simple with R and the rvest package. 
+
 To extract the data from your own league, make sure that it is a public league on ESPN. For Yahoo, they have an API key you can sign up for and extract data from. Not sure about NFL.com, I try to avoid playing in those leagues!
 
 [Data Extraction](https://github.com/meysubb/Fantasy_Football_League/blob/master/Post_Season_Draft_Analysis/draft_data.R)
