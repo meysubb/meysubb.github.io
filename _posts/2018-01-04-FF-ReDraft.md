@@ -1005,4 +1005,4 @@ To extract the data from your own league, make sure that it is a public league o
 [Data Extraction](https://github.com/meysubb/Fantasy_Football_League/blob/master/Post_Season_Draft_Analysis/draft_data.R)   
 [Analysis](https://github.com/meysubb/Fantasy_Football_League/blob/master/Post_Season_Draft_Analysis/writeup.Rmd)   
 
-If you are interested in re-creating the interactive visuals, I used the R wrapper to the highcharter (JS). The code can be found in the Rmarkdown for the analysis.
+If you are interested in re-creating the interactive visuals, I used the R wrapper to highcharter (JS). The code can be found in the Rmarkdown for the analysis.
