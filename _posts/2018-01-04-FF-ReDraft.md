@@ -14,7 +14,7 @@ comments: false
 
 I've been commish in this league for a while now. We've tested about everything from different engines, to different rules, etc. Earlier in the year, my league had a discussion about re-evaluating our draft and looking for high value players.
 
-### Player Performance
+## Player Performance
 
 <iframe class="huge" src="/images/plots/pre_lim_FFP.html"
     style="max-width = 100%"
@@ -32,7 +32,7 @@ It's pretty easy to spot the injuries, like David Johnson on the bottom left. Bu
 
 Just a note the projections were taken from Fantasy Football Analytics, they develop projections using custom rules from a league and a combination of different sources which includes: CBS Sports, ESPN, FantasyPros, NFL.com, Yahoo, etc. Go check it out <http://fantasyfootballanalytics.net/>.
 
-### Draft Results
+## Draft Results
 
 So let's take a quick look at the draft results. We should note that one or two injuries can immediately skew projections to be much greater than the actual points scored from players in each round. So that's something to keep in mind.
 
@@ -42,7 +42,7 @@ I'm a bit surprised to see Round 4's projections to be quite low. Unsurprisingly
 
 As we move on to the later rounds, projected and actual average value seem to catch up with each other. Alright let's move on to the draft valuation step.
 
-### Draft Valuation
+## Draft Valuation
 
 It took a bit to figure out exactly how I wanted to go about the redraft process. At first, I was thinking about creating a valuation process and going from there. But that wouldn't capture the effect of different positions.
 
@@ -80,7 +80,7 @@ It also captures the position battles very well, all RBs/WRs are to be drafted m
 
 This model isn't perfect but should be very capable of capturing an adequate redraft. Using the regression, the draft can be redone using actual points, actual position rank and of course position.
 
-#### Model Diagnostics
+### Model Diagnostics
 
 Before we move forth with reconstructing the draft based on actual results, let's study the validity of our model.
 
@@ -96,7 +96,7 @@ Lastly, Cook's distance is used to identify outliers. Here there are only 3 outl
 
 Overall the model looks satisfactory. We can move on to re-drafting now. Finally, the exciting stuff AM I RIGHT?!
 
-### Re-Drafting
+## Re-Drafting
 
 I'll go ahead and give you two different options to look at the redraft either through a table or a plot. The plot is interactive so hopefully that gives you a bit more detail.
 
@@ -994,3 +994,13 @@ Anyway's I'll lead you browse through the rest of it. If you want all of the dat
 For Injuries: look in the top left corner. (Michael Thomas, David Johnson, etc) For Busts: look for anyone above the 100 redrafted position. Don't forget about the waiver wire! For Steals: look in the top right corner. (Adam Thienlen, Duke Johnson, Marvin Jones, etc)
 
 So much for all the hype on Crowell, Johnson is the guy to have from Cleveland which makes sense. Cleveland always goes down, and then they need their pass-catching back in the game. Hell they even run him out of the slot. Hopefully the Browns can turn it around sometime soon.
+
+
+## Code
+
+To extract the data from your own league, make sure that it is a public league on ESPN. For Yahoo, they have an API key you can sign up for and extract data from. Not sure about NFL.com, I try to avoid playing in those leagues!
+
+[Data Extraction](https://github.com/meysubb/Fantasy_Football_League/blob/master/Post_Season_Draft_Analysis/draft_data.R)
+[Analysis](https://github.com/meysubb/Fantasy_Football_League/blob/master/Post_Season_Draft_Analysis/writeup.Rmd)
+
+If you are interested in re-creating the interactive visuals, I used the R wrapper to the highcharter (JS). The code can be found in the Rmarkdown for the analysis.
