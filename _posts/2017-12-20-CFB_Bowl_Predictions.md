@@ -275,25 +275,25 @@ Temple
 FIU
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">FIU</span>
+<span style="color: red;">FIU</span>
 </td>
 <td style="text-align:left;">
 0.68
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Temple</span>
+<span style="color: green;">Temple</span>
 </td>
 <td style="text-align:left;">
 0.50
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">FIU</span>
+<span style="color: red;">FIU</span>
 </td>
 <td style="text-align:left;">
 0.37
 </td>
 <td style="text-align:left;">
-TBD
+Temple
 </td>
 </tr>
 <tr>
@@ -304,25 +304,25 @@ UAB
 Ohio
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Ohio</span>
+<span style="color: green;">Ohio</span>
 </td>
 <td style="text-align:left;">
 0.60
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Ohio</span>
+<span style="color: green;">Ohio</span>
 </td>
 <td style="text-align:left;">
 0.99
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Ohio</span>
+<span style="color: green;">Ohio</span>
 </td>
 <td style="text-align:left;">
 0.64
 </td>
 <td style="text-align:left;">
-TBD
+Ohio
 </td>
 </tr>
 <tr>
@@ -333,25 +333,25 @@ Wyoming
 Central Mich.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Central Mich.</span>
+<span style="color: red;">Central Mich.</span>
 </td>
 <td style="text-align:left;">
 0.36
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Central Mich.</span>
+<span style="color: red;">Central Mich.</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Central Mich.</span>
+<span style="color: red;">Central Mich.</span>
 </td>
 <td style="text-align:left;">
 0.75
 </td>
 <td style="text-align:left;">
-TBD
+Wyoming
 </td>
 </tr>
 <tr>
@@ -362,25 +362,25 @@ South Fla.
 Texas Tech
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">South Fla.</span>
+<span style="color: green;">South Fla.</span>
 </td>
 <td style="text-align:left;">
 0.30
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">South Fla.</span>
+<span style="color: green;">South Fla.</span>
 </td>
 <td style="text-align:left;">
 0.68
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">South Fla.</span>
+<span style="color: green;">South Fla.</span>
 </td>
 <td style="text-align:left;">
 0.34
 </td>
 <td style="text-align:left;">
-TBD
+South Fla.
 </td>
 </tr>
 <tr>
@@ -391,25 +391,25 @@ Army West Point
 San Diego St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Army West Point</span>
+<span style="color: green;">Army West Point</span>
 </td>
 <td style="text-align:left;">
 0.19
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Army West Point</span>
+<span style="color: green;">Army West Point</span>
 </td>
 <td style="text-align:left;">
 0.37
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Army West Point</span>
+<span style="color: green;">Army West Point</span>
 </td>
 <td style="text-align:left;">
 0.38
 </td>
 <td style="text-align:left;">
-TBD
+Army West Point
 </td>
 </tr>
 <tr>
@@ -420,25 +420,25 @@ Appalachian St.
 Toledo
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Toledo</span>
+<span style="color: red;">Toledo</span>
 </td>
 <td style="text-align:left;">
 0.54
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Appalachian St.</span>
+<span style="color: green;">Appalachian St.</span>
 </td>
 <td style="text-align:left;">
 0.84
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Toledo</span>
+<span style="color: red;">Toledo</span>
 </td>
 <td style="text-align:left;">
 0.43
 </td>
 <td style="text-align:left;">
-TBD
+Appalachian St.
 </td>
 </tr>
 <tr>
@@ -449,25 +449,25 @@ Fresno St.
 Houston
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Houston</span>
+<span style="color: red;">Houston</span>
 </td>
 <td style="text-align:left;">
 0.80
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Houston</span>
+<span style="color: red;">Houston</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Houston</span>
+<span style="color: red;">Houston</span>
 </td>
 <td style="text-align:left;">
 0.73
 </td>
 <td style="text-align:left;">
-TBD
+Fresno St.
 </td>
 </tr>
 <tr>
@@ -478,25 +478,25 @@ West Virginia
 Utah
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Utah</span>
+<span style="color: green;">Utah</span>
 </td>
 <td style="text-align:left;">
 0.39
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">West Virginia</span>
+<span style="color: red;">West Virginia</span>
 </td>
 <td style="text-align:left;">
 0.98
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">West Virginia</span>
+<span style="color: red;">West Virginia</span>
 </td>
 <td style="text-align:left;">
 0.07
 </td>
 <td style="text-align:left;">
-TBD
+Utah
 </td>
 </tr>
 <tr>
@@ -507,25 +507,25 @@ Duke
 Northern Ill.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northern Ill.</span>
+<span style="color: red;">Northern Ill.</span>
 </td>
 <td style="text-align:left;">
 0.65
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northern Ill.</span>
+<span style="color: red;">Northern Ill.</span>
 </td>
 <td style="text-align:left;">
 0.96
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northern Ill.</span>
+<span style="color: red;">Northern Ill.</span>
 </td>
 <td style="text-align:left;">
 0.45
 </td>
 <td style="text-align:left;">
-TBD
+Duke
 </td>
 </tr>
 <tr>
@@ -536,25 +536,25 @@ UCLA
 Kansas St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCLA</span>
+<span style="color: red;">UCLA</span>
 </td>
 <td style="text-align:left;">
 0.80
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCLA</span>
+<span style="color: red;">UCLA</span>
 </td>
 <td style="text-align:left;">
 0.99
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCLA</span>
+<span style="color: red;">UCLA</span>
 </td>
 <td style="text-align:left;">
 0.35
 </td>
 <td style="text-align:left;">
-TBD
+Kansas St.
 </td>
 </tr>
 <tr>
@@ -565,25 +565,25 @@ Florida St.
 Southern Miss.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Southern Miss.</span>
+<span style="color: red;">Southern Miss.</span>
 </td>
 <td style="text-align:left;">
 0.50
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Southern Miss.</span>
+<span style="color: red;">Southern Miss.</span>
 </td>
 <td style="text-align:left;">
 0.96
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Southern Miss.</span>
+<span style="color: red;">Southern Miss.</span>
 </td>
 <td style="text-align:left;">
 0.49
 </td>
 <td style="text-align:left;">
-TBD
+Florida St.
 </td>
 </tr>
 <tr>
@@ -594,25 +594,25 @@ Boston College
 Iowa
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Boston College</span>
+<span style="color: red;">Boston College</span>
 </td>
 <td style="text-align:left;">
 0.37
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Boston College</span>
+<span style="color: red;">Boston College</span>
 </td>
 <td style="text-align:left;">
 0.41
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Boston College</span>
+<span style="color: red;">Boston College</span>
 </td>
 <td style="text-align:left;">
 0.09
 </td>
 <td style="text-align:left;">
-TBD
+Iowa
 </td>
 </tr>
 <tr>
@@ -623,25 +623,25 @@ Arizona
 Purdue
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Arizona</span>
+<span style="color: red;">Arizona</span>
 </td>
 <td style="text-align:left;">
 0.27
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Arizona</span>
+<span style="color: red;">Arizona</span>
 </td>
 <td style="text-align:left;">
 0.44
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Arizona</span>
+<span style="color: red;">Arizona</span>
 </td>
 <td style="text-align:left;">
 0.79
 </td>
 <td style="text-align:left;">
-TBD
+Purdue
 </td>
 </tr>
 <tr>
@@ -652,25 +652,25 @@ Texas
 Missouri
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Missouri</span>
+<span style="color: red;">Missouri</span>
 </td>
 <td style="text-align:left;">
 0.75
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Missouri</span>
+<span style="color: red;">Missouri</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Missouri</span>
+<span style="color: red;">Missouri</span>
 </td>
 <td style="text-align:left;">
 0.84
 </td>
 <td style="text-align:left;">
-TBD
+Texas
 </td>
 </tr>
 <tr>
@@ -681,25 +681,25 @@ Virginia
 Navy
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Navy</span>
+<span style="color: green;">Navy</span>
 </td>
 <td style="text-align:left;">
 0.90
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Navy</span>
+<span style="color: green;">Navy</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Navy</span>
+<span style="color: green;">Navy</span>
 </td>
 <td style="text-align:left;">
 0.92
 </td>
 <td style="text-align:left;">
-TBD
+Navy
 </td>
 </tr>
 <tr>
@@ -710,25 +710,25 @@ Oklahoma St.
 Virginia Tech
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Oklahoma St.</span>
+<span style="color: green;">Oklahoma St.</span>
 </td>
 <td style="text-align:left;">
 0.33
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Oklahoma St.</span>
+<span style="color: green;">Oklahoma St.</span>
 </td>
 <td style="text-align:left;">
 0.82
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Oklahoma St.</span>
+<span style="color: green;">Oklahoma St.</span>
 </td>
 <td style="text-align:left;">
 0.43
 </td>
 <td style="text-align:left;">
-TBD
+Oklahoma St.
 </td>
 </tr>
 <tr>
@@ -739,25 +739,25 @@ Stanford
 TCU
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">TCU</span>
+<span style="color: green;">TCU</span>
 </td>
 <td style="text-align:left;">
 0.50
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">TCU</span>
+<span style="color: green;">TCU</span>
 </td>
 <td style="text-align:left;">
 0.99
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">TCU</span>
+<span style="color: green;">TCU</span>
 </td>
 <td style="text-align:left;">
 0.54
 </td>
 <td style="text-align:left;">
-TBD
+TCU
 </td>
 </tr>
 <tr>
@@ -768,25 +768,25 @@ Michigan St.
 Washington St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Washington St.</span>
+<span style="color: red;">Washington St.</span>
 </td>
 <td style="text-align:left;">
 0.48
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Washington St.</span>
+<span style="color: red;">Washington St.</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Washington St.</span>
+<span style="color: red;">Washington St.</span>
 </td>
 <td style="text-align:left;">
 0.51
 </td>
 <td style="text-align:left;">
-TBD
+Michigan St.
 </td>
 </tr>
 <tr>
@@ -797,25 +797,25 @@ Wake Forest
 Texas A&M
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Texas A&M</span>
+<span style="color: red;">Texas A&M</span>
 </td>
 <td style="text-align:left;">
 0.16
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Wake Forest</span>
+<span style="color: green;">Wake Forest</span>
 </td>
 <td style="text-align:left;">
 0.55
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Texas A&M</span>
+<span style="color: red;">Texas A&M</span>
 </td>
 <td style="text-align:left;">
 0.19
 </td>
 <td style="text-align:left;">
-TBD
+Wake Forest
 </td>
 </tr>
 <tr>
@@ -826,25 +826,25 @@ Kentucky
 Northwestern
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northwestern</span>
+<span style="color: green;">Northwestern</span>
 </td>
 <td style="text-align:left;">
 0.69
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northwestern</span>
+<span style="color: green;">Northwestern</span>
 </td>
 <td style="text-align:left;">
 0.99
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Northwestern</span>
+<span style="color: green;">Northwestern</span>
 </td>
 <td style="text-align:left;">
 0.34
 </td>
 <td style="text-align:left;">
-TBD
+Northwestern
 </td>
 </tr>
 <tr>
@@ -855,25 +855,25 @@ New Mexico St.
 Utah St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Utah St.</span>
+<span style="color: red;">Utah St.</span>
 </td>
 <td style="text-align:left;">
 0.52
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">New Mexico St.</span>
+<span style="color: green;">New Mexico St.</span>
 </td>
 <td style="text-align:left;">
 0.94
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Utah St.</span>
+<span style="color: red;">Utah St.</span>
 </td>
 <td style="text-align:left;">
 0.23
 </td>
 <td style="text-align:left;">
-TBD
+New Mexico St.
 </td>
 </tr>
 <tr>
@@ -884,25 +884,25 @@ Ohio St.
 Southern California
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Southern California</span>
+<span style="color: red;">Southern California</span>
 </td>
 <td style="text-align:left;">
 0.29
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Ohio St.</span>
+<span style="color: green;">Ohio St.</span>
 </td>
 <td style="text-align:left;">
 0.50
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Ohio St.</span>
+<span style="color: green;">Ohio St.</span>
 </td>
 <td style="text-align:left;">
 0.17
 </td>
 <td style="text-align:left;">
-TBD
+Ohio St.
 </td>
 </tr>
 <tr>
@@ -913,25 +913,25 @@ Louisville
 Mississippi St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Mississippi St.</span>
+<span style="color: green;">Mississippi St.</span>
 </td>
 <td style="text-align:left;">
 0.26
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Mississippi St.</span>
+<span style="color: green;">Mississippi St.</span>
 </td>
 <td style="text-align:left;">
 0.97
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Louisville</span>
+<span style="color: red;">Louisville</span>
 </td>
 <td style="text-align:left;">
 0.19
 </td>
 <td style="text-align:left;">
-TBD
+Mississippi St.
 </td>
 </tr>
 <tr>
@@ -942,25 +942,25 @@ Iowa St.
 Memphis
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Memphis</span>
+<span style="color: red;">Memphis</span>
 </td>
 <td style="text-align:left;">
 0.39
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Memphis</span>
+<span style="color: red;">Memphis</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Memphis</span>
+<span style="color: red;">Memphis</span>
 </td>
 <td style="text-align:left;">
 0.79
 </td>
 <td style="text-align:left;">
-TBD
+Iowa St.
 </td>
 </tr>
 <tr>
@@ -971,25 +971,25 @@ Washington
 Penn St.
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Penn St.</span>
+<span style="color: green;">Penn St.</span>
 </td>
 <td style="text-align:left;">
 0.01
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Penn St.</span>
+<span style="color: green;">Penn St.</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Penn St.</span>
+<span style="color: green;">Penn St.</span>
 </td>
 <td style="text-align:left;">
 0.37
 </td>
 <td style="text-align:left;">
-TBD
+Penn St.
 </td>
 </tr>
 <tr>
@@ -1000,25 +1000,25 @@ Miami (FL)
 Wisconsin
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Wisconsin</span>
+<span style="color: green;">Wisconsin</span>
 </td>
 <td style="text-align:left;">
 0.82
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Wisconsin</span>
+<span style="color: green;">Wisconsin</span>
 </td>
 <td style="text-align:left;">
 1.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Wisconsin</span>
+<span style="color: green;">Wisconsin</span>
 </td>
 <td style="text-align:left;">
 0.78
 </td>
 <td style="text-align:left;">
-TBD
+Wisconsin
 </td>
 </tr>
 <tr>
@@ -1029,25 +1029,25 @@ Michigan
 South Carolina
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Michigan</span>
+<span style="color: red;">Michigan</span>
 </td>
 <td style="text-align:left;">
 0.42
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Michigan</span>
+<span style="color: red;">Michigan</span>
 </td>
 <td style="text-align:left;">
 0.64
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Michigan</span>
+<span style="color: red;">Michigan</span>
 </td>
 <td style="text-align:left;">
 0.04
 </td>
 <td style="text-align:left;">
-TBD
+South Carolina
 </td>
 </tr>
 <tr>
@@ -1058,25 +1058,25 @@ Auburn
 UCF
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCF</span>
+<span style="color: green;">UCF</span>
 </td>
 <td style="text-align:left;">
 0.01
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCF</span>
+<span style="color: green;">UCF</span>
 </td>
 <td style="text-align:left;">
 0.98
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">UCF</span>
+<span style="color: green;">UCF</span>
 </td>
 <td style="text-align:left;">
 0.14
 </td>
 <td style="text-align:left;">
-TBD
+UCF
 </td>
 </tr>
 <tr>
@@ -1087,25 +1087,25 @@ Notre Dame
 LSU
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Notre Dame</span>
+<span style="color: green;">Notre Dame</span>
 </td>
 <td style="text-align:left;">
 0.16
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Notre Dame</span>
+<span style="color: green;">Notre Dame</span>
 </td>
 <td style="text-align:left;">
 0.68
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Notre Dame</span>
+<span style="color: green;">Notre Dame</span>
 </td>
 <td style="text-align:left;">
 0.34
 </td>
 <td style="text-align:left;">
-TBD
+Notre Dame
 </td>
 </tr>
 <tr>
@@ -1116,25 +1116,25 @@ Oklahoma
 Georgia
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Georgia</span>
+<span style="color: green;">Georgia</span>
 </td>
 <td style="text-align:left;">
 0.30
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Oklahoma</span>
+<span style="color: red;">Oklahoma</span>
 </td>
 <td style="text-align:left;">
 0.89
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Oklahoma</span>
+<span style="color: red;">Oklahoma</span>
 </td>
 <td style="text-align:left;">
 0.13
 </td>
 <td style="text-align:left;">
-TBD
+Georgia
 </td>
 </tr>
 <tr>
@@ -1145,30 +1145,29 @@ Clemson
 Alabama
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Alabama</span>
+<span style="color: green;">Alabama</span>
 </td>
 <td style="text-align:left;">
 0.00
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Alabama</span>
+<span style="color: green;">Alabama</span>
 </td>
 <td style="text-align:left;">
 0.99
 </td>
 <td style="text-align:left;">
-<span style="color: grey;">Alabama</span>
+<span style="color: green;">Alabama</span>
 </td>
 <td style="text-align:left;">
 0.18
 </td>
 <td style="text-align:left;">
-TBD
+Alabama
 </td>
 </tr>
 </tbody>
 </table>
-Yikes, looks like Algorithm 1 and 3 aren't doing so hot right now. While Algorithm 2 is performing just fine. Let's see how the rest of bowl season goes!
 
 Note, the confidence of each prediction is also provided using the probability the model provided in predicting a home win or away win. I'll update this
 
@@ -1177,4 +1176,15 @@ I'm quite unhappy with a few picks:
 (2) TCU over Stanford, picking against the ground game of Stanford?
 (3) Also the confidence in Bama beating Clemson, scares me. 99% for XGB? JEEZ
 
-I wish I had some conference and scheduled based statistics as well. I'd love to incorporate SOS, power-5 opponnets, etc. There are probably a million different things that can be useful. As I continue this yearly, I'll look for more statistics to include. Let me know if you think there are any that I should consider!
+I wish I had some conference and scheduled based statistics as well. I'd love to incorporate SOS, power-5 opponents, etc. There are probably a million different things that can be useful. As I continue this yearly, I'll look for more statistics to include. Let me know if you think there are any that I should consider!
+
+Final Results
+-------------
+
+Algorithm 1 - 16/37 = 43.2%
+Algorithm 2 - 21/37 = 56.7%
+Algorithm 3 - 15/37 = 43.2%
+
+None of these are truly fantastic. I would like to break the 60% threshold. Just like last year, there's a lot left to learn going forward. I'll take a stab at this again for the 2018 bowl season. So long folks!
+
+Congrats to Alabama! TUAAAAAAAA!
