@@ -1181,10 +1181,10 @@ I wish I had some conference and scheduled based statistics as well. I'd love to
 Final Results
 -------------
 
-Algorithm 1 - 16/37 = 43.2%
-Algorithm 2 - 21/37 = 56.7%
-Algorithm 3 - 15/37 = 43.2%
+Algorithm 1 - 16/37 = 43.2%   
+Algorithm 2 - 21/37 = 56.7%   
+Algorithm 3 - 15/37 = 43.2%   
 
 None of these are truly fantastic. I would like to break the 60% threshold. Just like last year, there's a lot left to learn going forward. I'll take a stab at this again for the 2018 bowl season. So long folks!
 
-Congrats to Alabama! TUAAAAAAAA!
+Congrats to Alabama! TUAAAAAAAA! 
