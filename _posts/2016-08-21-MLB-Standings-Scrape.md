@@ -2,14 +2,17 @@
 layout: post
 title: "Scrape MLB Standings per Division"
 description: "Scrape Data with R"
-category: baseball
+category: Baseball
 tags: [MLB, R, Python]
 comments: false
+excerpt_separator: <!--more-->
 ---
 
-I think I mentioned in one of my previous posts that my friend is one of the writers for the Crawfish Boxes SB Nation blog (Houston Astros). Well, this year he writes weekly reviews of the AL West division ([SB Nation’s Crawfish boxes](http://www.crawfishboxes.com/2016/8/8/12402328/the-good-the-bad-and-the-ugly-a-weekly-al-west-roundup-week-18?_ga=1.206349203.1040503687.1461935942). Knowing that I liked sports analytics and wanted to get more practice in, he asked whether I be able to scrape pertinent data for him. 
+I think I mentioned in one of my previous posts that my friend is one of the writers for the Crawfish Boxes SB Nation blog (Houston Astros). Well, this year he writes weekly reviews of the AL West division ([SB Nation’s Crawfish boxes](http://www.crawfishboxes.com/2016/8/8/12402328/the-good-the-bad-and-the-ugly-a-weekly-al-west-roundup-week-18?_ga=1.206349203.1040503687.1461935942). Knowing that I liked sports analytics and wanted to get more practice in, he asked whether I be able to scrape pertinent data for him.
 
-Through the course of this post, I will walk you through scraping this data via R. Hopefully, in the near future I will be able to replicte this using python. I started with the basics, scraping and plotting standings data. After that, I moved on to getting offensive data and eventually pitching data. None of this would not have been possible without the help of [Baseball Reference](http://www.baseball-reference.com/games/standings.cgi?year=2016&month=8&day=21&submit=Submit+Date). 
+Through the course of this post, I will walk you through scraping this data via R. Hopefully, in the near future I will be able to replicate this using python. I started with the basics, scraping and plotting standings data. After that, I moved on to getting offensive data and eventually pitching data. None of this would not have been possible without the help of [Baseball Reference](http://www.baseball-reference.com/games/standings.cgi?year=2016&month=8&day=21&submit=Submit+Date).
+
+<!--more-->
 
 ### AL West Division Standings
 
@@ -26,13 +29,13 @@ date_scrape <- function(y,m,d,div) {
 
 The XML library is loaded to scrape data using R. The date scrape function automates scraping MLB division data from Baseball Reference. First the function, determines the url for baseball reference based on the date. After which, it scrapes all HTML tables. Finally, it selects the appropriate division from all the tables. For quick reference
 
-| Division Name | Number        | 
-| :-----------: |:-------------:| 
-| AL East       | 2 | 
+| Division Name | Number        |
+| :-----------: |:-------------:|
+| AL East       | 2 |
 | AL Central    | 3 |  
-| AL West       | 4 | 
+| AL West       | 4 |
 | NL East       | 5 |
-| NL Central    | 6 | 
+| NL Central    | 6 |
 | NL West       | 7 |    
 
 
@@ -46,10 +49,10 @@ date <- paste0(year,"/",month,"/",day)
 overall_standings <- date_scrape(year,month,day,div)
 ```
 
-The output is as follows: 
+The output is as follows:
 
 ```
-# AL West 
+# AL West
 
    Tm  W  L W.L.   GB  RS  RA pythW.L.
 1 TEX 73 52 .584   -- 582 581     .501
@@ -59,18 +62,18 @@ The output is as follows:
 5 LAA 52 72 .419 20.5 550 593     .466
 ```
 
-In order to plot and see the changes in the division on a weekly or daily basis, we will need to scrape and clean this data. 
+In order to plot and see the changes in the division on a weekly or daily basis, we will need to scrape and clean this data.
 
 ```r
 library(reshape2)
 dates <- as.data.frame(seq(as.Date("2016/04/03"), as.Date(date), by = "weeks"))
-names(dates) <- "dates" 
+names(dates) <- "dates"
 dates <- colsplit(dates$dates, "-", c("y", "m", "d"))
 head(dates)
 ```
-A complete sequence of dates is needed to scrape division standings over the course of time. The rehsape2 package is loaded, it provides the colsplit function to split the dates into three separate columns. This will be useful later, when providing the date scrape function with those dates. 
+A complete sequence of dates is needed to scrape division standings over the course of time. The rehsape2 package is loaded, it provides the colsplit function to split the dates into three separate columns. This will be useful later, when providing the date scrape function with those dates.
 
-The output is as follows: 
+The output is as follows:
 
 ```
      y m  d
@@ -82,7 +85,7 @@ The output is as follows:
 6 2016 5  8
 ```
 
-Using the dates data frame, standings data can be scraped. 
+Using the dates data frame, standings data can be scraped.
 
 ```r
 library(plyr)
@@ -92,11 +95,11 @@ head(overall_standings)
 tail(overall_standings)
 ```
 
-``%>%" passes object on the left hand side as the first argument of the function on the right hand side. It is more commonly known as a pipe. 
+``%>%" passes object on the left hand side as the first argument of the function on the right hand side. It is more commonly known as a pipe.
 
 The dates data is grouped by year, month, day and then supplied to the date scrape function. The do function is used to iterate the scrape function over all dates (as specified by the data frame).
 
-The output is as follows: 
+The output is as follows:
 
 ```
 # head(overall_standings)
@@ -120,9 +123,9 @@ The output is as follows:
 6  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
 ```
 
-### Weekly records for the AL West 
+### Weekly records for the AL West
 
-The previous lines of code can be furthered to determine the weekly records for the AL West. 
+The previous lines of code can be furthered to determine the weekly records for the AL West.
 
 ```r
 len <- nrow(dates)
@@ -133,7 +136,7 @@ week_record[,c(5,6,9,10)] <- sapply(week_record[,c(5,6,9,10)],as.numeric)
 week_record #prints week_record
 ```
 
-The code above, filters the overall_standings data frame for the last two sundays of interest. In this case it filters the previous data between 8/14 and 8/21. The output is as follows. 
+The code above, filters the overall_standings data frame for the last two Sundays of interest. In this case it filters the previous data between 8/14 and 8/21. The output is as follows.
 
 ```
        y     m     d    Tm     W     L  W.L.    GB    RS    RA pythW.L.
@@ -150,25 +153,25 @@ The code above, filters the overall_standings data frame for the last two sunday
 10  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
 ```
 
-Looking at the data above, these are not weekly records. Instead they are records as of 8/14 and 8/21. Not to worry, R's dplyr and plyr package will allow us to calculate the weekly records. 
+Looking at the data above, these are not weekly records. Instead they are records as of 8/14 and 8/21. Not to worry, R's dplyr and plyr package will allow us to calculate the weekly records.
 
 ```r
-weekly <- week_record %>% 
-  group_by(Tm) %>% 
+weekly <- week_record %>%
+  group_by(Tm) %>%
   mutate(Week_W = W - lag(W),Week_L = L - lag(L),RS_Week = RS - lag(RS), RA_Week = RA-lag(RA)) %>%
-  na.omit() %>% 
-  select(Tm,Week_W,Week_L,RS_Week,RA_Week) %>% 
-  mutate(W.L = signif(Week_W / (Week_W + Week_L),digits=3)) %>% 
+  na.omit() %>%
+  select(Tm,Week_W,Week_L,RS_Week,RA_Week) %>%
+  mutate(W.L = signif(Week_W / (Week_W + Week_L),digits=3)) %>%
   mutate(pythW.L. = signif(RS_Week^1.83/(RS_Week^1.83 + RA_Week^1.83),digits=3))
 
 weekly
 ```
 
-The above chunk of code calculates the weekly division data. First, it takes week_record (as seen above) and groups it by Team. After that, it calculates the following new column values Week Wins, Week Losses, Runs Scored Weekly, Runs Allowed Weekly, Win/Loss % and the Pythagorean Win/Loss %. 
+The above chunk of code calculates the weekly division data. First, it takes week_record (as seen above) and groups it by Team. After that, it calculates the following new column values Week Wins, Week Losses, Runs Scored Weekly, Runs Allowed Weekly, Win/Loss % and the Pythagorean Win/Loss %.
 
-Lets look at Week_W = W - lag(W). Here the Week Wins is calculated by taking the latest W value for a Team and subtracted it from its previous W value for that Team.  For example, take the Rangers (Tex). The two win values are 69 and 73. The Week_W is 73 - 69, resulting in 4 wins this past week. 
+Lets look at Week_W = W - lag(W). Here the Week Wins is calculated by taking the latest W value for a Team and subtracted it from its previous W value for that Team.  For example, take the Rangers (Tex). The two win values are 69 and 73. The Week_W is 73 - 69, resulting in 4 wins this past week.
 
-The Win/Loss % and Pytahogream Win/Loss % are calculated using the most recent variables created. Before doing so, only the most recently calculated columns must be chosen. This is done so using the select function. The Win/Loss % is calculated using the current Week Win and Week Loss totals. 
+The Win/Loss % and Pytahogream Win/Loss % are calculated using the most recent variables created. Before doing so, only the most recently calculated columns must be chosen. This is done so using the select function. The Win/Loss % is calculated using the current Week Win and Week Loss totals.
 
 The resulting weekly record is:  
 
@@ -184,20 +187,20 @@ The resulting weekly record is:
 
 ### AL West Division Plot (Shown by GB)
 
-![_config.yml]({{ site.baseurl }}/images/AL_West.png) 
+![_config.yml]({{ site.baseurl }}/images/AL_West.png)
 
-For those of you curious how to develop a plot like that, I am about to walk you through the steps. First off, we need to scrape the data. This should be fairly simple given then above examples. 
+For those of you curious how to develop a plot like that, I am about to walk you through the steps. First off, we need to scrape the data. This should be fairly simple given then above examples.
 
 To create the above plot, we will need data per day. To do this, we will need to make a data frame similar to the dates data frame we made before. But this time, we need to sequence over days instead of weeks (see below).
 
 ```r
 dates2 <- as.data.frame(seq(as.Date("2016/04/03"), as.Date(date), by = "days"))
-names(dates2) <- "days" 
+names(dates2) <- "days"
 dates2 <- colsplit(dates2$days, "-", c("y", "m", "d"))
 head(dates2)
 ```
 
-The code should similar to the chunk shown earlier in this post, with the exception of sequencing over days instead of weeks. 
+The code should similar to the chunk shown earlier in this post, with the exception of sequencing over days instead of weeks.
 
 
 ```
@@ -218,7 +221,7 @@ head(daily_standings)
 tail(daily_standings)
 ```
 
-The output from this looks like: 
+The output from this looks like:
 
 ```
 # head(daily_standings)
@@ -243,40 +246,40 @@ The output from this looks like:
 6  2016     8    21   LAA    52    72  .419  20.5   550   593     .466
 ```
 
-Finally before plotting this data, it requires some post-processing. This should be quite fun. So some of the data we scraped from Baseball Reference shows up as character types, and we need them to be in a numeric format. If data isn't in a numeric format, then the plotting library will treat the data in a discrete manner. 
+Finally before plotting this data, it requires some post-processing. This should be quite fun. So some of the data we scraped from Baseball Reference shows up as character types, and we need them to be in a numeric format. If data isn't in a numeric format, then the plotting library will treat the data in a discrete manner.
 
 ```r
 alW_standings_2016 <- ungroup(daily_standings) %>% mutate(Date = paste0(y, sep = "-", m, sep = "-", d)) %>% select(Date, Tm, GB)
-alW_standings_2016$GB <- as.numeric(alW_standings_2016$GB) 
+alW_standings_2016$GB <- as.numeric(alW_standings_2016$GB)
 alW_standings_2016$Date <- as.Date(alW_standings_2016$Date)
 alW_standings_2016$Tm <- as.factor(alW_standings_2016$Tm)
 alW_standings_2016$GB <- ifelse(is.na(alW_standings_2016$GB), 0, alW_standings_2016$GB)
 ```
 
-First, we apply the ungroup function to remove any existing groupings that may exist in the data frame. After that we combine the following columns: y,m,d into an actual date. The select function, selects the columns of interest. The following statements convert each column into different data types. One into a numeric data type, the other into a date type and lastly a factor. Factors are variables that can only take on a limited number of different values, in this case all possible teams. The if else statement, takes all NA's and replaces them with a 0. This applies mainly for the first couple of days where some teams didn't play a game. 
+First, we apply the ungroup function to remove any existing groupings that may exist in the data frame. After that we combine the following columns: y,m,d into an actual date. The select function, selects the columns of interest. The following statements convert each column into different data types. One into a numeric data type, the other into a date type and lastly a factor. Factors are variables that can only take on a limited number of different values, in this case all possible teams. The if else statement, takes all NA's and replaces them with a 0. This applies mainly for the first couple of days where some teams didn't play a game.
 
-Finally, the moment you have been waiting for creating the plot. First we create a vector with a list of team colors. 
+Finally, the moment you have been waiting for creating the plot. First we create a vector with a list of team colors.
 
 ```r
 team_colors = c("SEA" = "#01487E", "TEX" = "#0482CC", "HOU" = "#F7742C", "LAA" = "#CA1F2C", "OAK" = "#003300")
 library(ggplot2)
-ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) + 
-  geom_line(size = 1.25, alpha = .75) + 
-  scale_colour_manual(values = team_colors, name = "Team") + 
-  scale_y_reverse(breaks = 0:25) + 
-  scale_x_date() + 
+ggplot(alW_standings_2016, aes(Date, GB, colour = Tm)) +
+  geom_line(size = 1.25, alpha = .75) +
+  scale_colour_manual(values = team_colors, name = "Team") +
+  scale_y_reverse(breaks = 0:25) +
+  scale_x_date() +
   geom_text(aes(label=ifelse(Date == "2016-08-21", as.character(GB),'')),hjust=-.5, size = 4, show.legend = FALSE) +
-  labs(title = "AL West Race through August 2016") + 
-  theme(legend.title = element_text(size = 12)) + 
-  theme(legend.text = element_text(size = 12)) + 
+  labs(title = "AL West Race through August 2016") +
+  theme(legend.title = element_text(size = 12)) +
+  theme(legend.text = element_text(size = 12)) +
   theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
 ```
 
 [INSERT description of ggplot layers]
 
-Both plots in these post were made using the ggplot2 package. I have recently heard about plotly and its interactive features. Hopefully, I will have time to learn how to use that package later. 
+Both plots in these post were made using the ggplot2 package. I have recently heard about plotly and its interactive features. Hopefully, I will have time to learn how to use that package later.
 
-Alright another plot to visualize the standings is to look at the cumulative gaves over .500 over the course of time. 
+Alright another plot to visualize the standings is to look at the cumulative games over .500 over the course of time.
 
 
 ```r
@@ -288,7 +291,7 @@ c_game_500$Date <- as.Date(c_game_500$Date)
 head(c_game_500)
 ```
 
-The above chunk of code takes the scraped division standings by week, and finds the number of games above .500 a team is. This is very similar to the previous chunk of code shown for the games behind plot shown previously. 
+The above chunk of code takes the scraped division standings by week, and finds the number of games above .500 a team is. This is very similar to the previous chunk of code shown for the games behind plot shown previously.
 
 ```
         Date    Tm cum_500
@@ -300,23 +303,22 @@ The above chunk of code takes the scraped division standings by week, and finds 
 5 2016-04-03   LAA       0
 6 2016-04-10   OAK       1
 ```
-Lastly, below is the chunk of code used to create this plot. 
+Lastly, below is the chunk of code used to create this plot.
 
 
 ```R
-ggplot(cum_game_500, aes(Date, cum_500, colour = Tm)) + 
-  geom_line(size = 1.25, alpha = .75) + 
-  geom_hline(yintercept = 0) + 
-  scale_colour_manual(values = team_colors, name = "Team") + 
-  scale_x_date() + 
+ggplot(cum_game_500, aes(Date, cum_500, colour = Tm)) +
+  geom_line(size = 1.25, alpha = .75) +
+  geom_hline(yintercept = 0) +
+  scale_colour_manual(values = team_colors, name = "Team") +
+  scale_x_date() +
   geom_text(aes(label=ifelse(Date == "2016-08-21", as.character(cum_500),'')),hjust=-.5, size = 4, show.legend = FALSE) +
-  labs(title = "AL West Race through August 2016",y="Cumulative games over .500") + 
-  theme(legend.title = element_text(size = 12)) + 
-  theme(legend.text = element_text(size = 12)) + 
+  labs(title = "AL West Race through August 2016",y="Cumulative games over .500") +
+  theme(legend.title = element_text(size = 12)) +
+  theme(legend.text = element_text(size = 12)) +
   theme(axis.text = element_text(size = 13, face = "bold"), axis.title = element_text(size = 16, color = "grey50", face = "bold"), plot.title = element_text(size = 30, face = "bold", vjust = 1))
 ```
 
 [INSERT description of ggplot layers]
 
-![_config.yml]({{ site.baseurl }}/images/GO_AL_West.png) 
-
+![_config.yml]({{ site.baseurl }}/images/GO_AL_West.png)

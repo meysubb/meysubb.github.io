@@ -1,21 +1,61 @@
-name: Meyappan Subbaiah
-url: 'https://meysubb.github.io'
-description: [Blog]
+# Site Info
+title: Meyappan Subbaiah
+tagline: 'Data, Energy, Sports! Take your pick!'
+description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
+baseurl: ""
+url: http://meysubb.github.io
+logo: '/public/logo.png'
 
-exclude: [Gemfile, Gemfile.lock, README.md]
+# Site configurations
+gems:
+  - jekyll-paginate
 markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
 
-author: 'Meyappan'
+version: 1.0.0
+exclude: [Gemfile, Gemfile.lock, README.md]
+
+# About/contact
+author:
+  name: Meyappan
+  gravatar: b2e712609097a0b1980ff704239ae61f
+  contact:
+    linkedin:  https://www.linkedin.com/in/msubbaiah
+    github:    https://github.com/meysubb
+    twitter:   https://twitter.com/msubbaiah1
 disqus_shortname: msubbaiah
 google_analytics: UA-42209870-1
 
-gems:
-  # https://help.github.com/articles/atom-rss-feeds-for-github-pages/
-  - jekyll-gist
-  - jekyll-sitemap
+excerpt_separator: <!--more-->
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Blog:
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+    - { Resume: 'https://meysubb.github.io/online-resume/'}
 
-sass:
-    sass_dir: _sass
-    style: :compressed
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
 
-google_analytics: UA-90700102-1
+hero:
+  image: /public/img/Kyle_Field.jpg
+  caption: 'Taken by Yours Truly'
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-90700102-1' # leave blank if you don't want google analytics
+disqus_short_name: 'msubbaiah' # leave blank if you don't want disqus

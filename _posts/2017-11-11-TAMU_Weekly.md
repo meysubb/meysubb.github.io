@@ -1,13 +1,16 @@
 ---
 layout: post
-title: "Weekly Recap TAMU MBB"
+title: "Week 1 Recap TAMU MBB"
 description: "TAMU MBB Weekly Recaps"
-category: tamu mbb
-tags: [college basketball, R, college sports]
+category: TAMU MBB
+tags: [college basketball, R]
 comments: false
+excerpt_separator: <!--more-->
 ---
 
 Ah, finally college basketball season is upon us. We played in the only top 25 matchup this week. For those of you poor souls still at work on a Friday at 5 pm. I put together a quick overview of how the team looked
+
+<!--more-->
 
 Quick Notes
 -----------

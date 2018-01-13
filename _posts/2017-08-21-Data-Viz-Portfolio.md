@@ -2,12 +2,14 @@
 layout: post
 title: "Data Viz"
 description: "Data Viz Portfolio"
-category: visualization
-tags: [R, python]
+category: Visualization
+tags: [R]
 comments: false
+excerpt_separator: <!--more-->
 ---
 
 Just wanted to share some data visualizations, I've created. Digging through the files on my computer can get confusing.
+<!--more-->
 
 ## Cars Viz
 

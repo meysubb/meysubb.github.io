@@ -2,9 +2,10 @@
 layout: post
 title: "Week 2+Legends Classic Recap TAMU MBB"
 description: "TAMU MBB Weekly Recaps"
-category: tamu mbb
-tags: [college basketball, R, college sports]
+category: TAMU MBB
+tags: [college basketball, R]
 comments: false
+excerpt_separator: <!--more-->
 ---
 Happy Thanksgiving everyone! Hope you are stuffing yourself with Turkey or whatever it is you chose to eat! I'm a bit late, I should've put this up on Sunday but I wanted to let the Aggies finish out the Legends Classic. I know that GBH has all the game reviews done, so this is mostly just a piece on the numbers and what they tell us about TAMU basketball.
 
@@ -12,6 +13,8 @@ Quick Notes
 -----------
 
 Ranked 16th to start the week. Robert Williams came back against OSU, we still have two more games before JJ Caldwell comes back.
+
+<!--more-->
 
 ### Starting Five
 

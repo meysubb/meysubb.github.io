@@ -1,11 +1,23 @@
-# Jekyll source for blog.lanyonm.org
-Read more here: [GitHub User Pages](https://help.github.com/articles/user-organization-and-project-pages).
+# Codinfox-Lanyon
 
-# License
-The following directories and their contents are Copyright Michael Lanyon.  You may not reuse anything therein without my permission:
+This is a jekyll template based on [Lanyon](https://github.com/poole/lanyon). See a live demo [here](http://codinfox.github.io).
 
-*   _posts/
-*   _drafts/
-*   images/ (unless otherwise noted in a watermark)
+**If you like this project, PLEASE give it a star.**
 
-All other directories and files are MIT Licensed.
+Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
+
+All the configurations are inside either `_config.yml` or `_config.scss`. The options are fairly straightforward. 
+
+The theme supports: 
+
+1. Theme colors: you can choose your favorite theme color
+2. Changable sidebar locations
+3. Integration of FontAwesome, MathJax, Disqus and Google Analytics
+4. and numerous improvements over original Lanyon
+
+
+## License
+
+Open sourced under the [MIT license](LICENSE.md).
+
+<3

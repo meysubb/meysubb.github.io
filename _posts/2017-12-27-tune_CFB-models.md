@@ -5,7 +5,17 @@ description: "CFB model building"
 category: sports analytics
 tags: [college football, R, python, college sports]
 comments: false
+excerpt_separator: <!--more-->
 ---
+
+I've always loved college sports, especially college football. Bowl season is arguably the closest thing to March Madness when it comes to building a bracket or in this case participating in a pick'em. I've done pick'ems in the past with friends and co-workers. Last year, I ventured out to build and use ML models to predict the outcomes.
+
+However, at the time I didn't really have as much of an expertise in hyper-parmater tuning or what the pitfalls of many models might be. Having started a Business Analytics program this past year, I'm much more familiar with all my potential ML models and tuning parameters.
+
+<!--more-->
+
+I decided to try to predict outcomes again this year and am going to use this post to describe the process. For those interested in what the predictions look like, you can find them [here](http://meysubb.github.io/sports%20analytics/2017/12/20/CFB_Bowl_Predictions.html).
+
 -   [Data](#data)
 -   [Methods](#methods)
 -   [Models](#models)
@@ -13,12 +23,6 @@ comments: false
     -   [XGBoost (XGB)](#xgboost-xgb)
     -   [Support Vector Machines (SVM)](#support-vector-machines-svm)
 -   [Concerns](#concerns)
-
-I've always loved college sports, especially college football. Bowl season is arguably the closest thing to March Madness when it comes to building a bracket or in this case participating in a pick'em. I've done pick'ems in the past with friends and co-workers. Last year, I ventured out to build and use ML models to predict the outcomes.
-
-However, at the time I didn't really have as much of an expertise in hyperparmater tuning or what the pitfalls of many models might be. Having started a Business Analytics program this past year, I'm much more familiar with all my potential ML models and tuning parameters.
-
-I decided to try to predict outcomes again this year and am going to use this post to describe the process. For those interested in what the predictions look like, you can find them [here](http://meysubb.github.io/sports%20analytics/2017/12/20/CFB_Bowl_Predictions.html).
 
 Data
 ----
@@ -81,7 +85,7 @@ x <- setdiff(names(ind_game_df), y)
 Models
 ------
 
-I'm going to use the `h20` package to build my tree based methods. In the past, I've found them to be more computationally efficient by leveraging parallel proccesses.
+I'm going to use the `h20` package to build my tree based methods. In the past, I've found them to be more computationally efficient by leveraging parallel processes.
 
 ### Random Forests (RF)
 
@@ -221,13 +225,14 @@ svm_Radial <- train(home_win ~., data = ind_game_df, method = "svmRadial",
 #svm_Radial
 ```
 
-<iframe src="/images/plots/Static_JSON_bokeh.html"
+<iframe
     style="max-width = 100%"
     sandbox="allow-same-origin allow-scripts"
     width="100%"
     height="600"
     scrolling="no"
     seamless="seamless"
+    src="/images/plots/Static_JSON_bokeh.html"
     frameborder="0">
 </iframe>
 

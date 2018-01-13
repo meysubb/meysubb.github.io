@@ -5,14 +5,16 @@ description: "FF 2017"
 category: sports analytics
 tags: [football, R]
 comments: false
+excerpt_separator: <!--more-->
 ---
+
+I've been commish in this league for a while now. We've tested about everything from different engines, to different rules, etc. Earlier in the year, my league had a discussion about re-evaluating our draft and looking for high value players.
+<!--more-->
 
 -   [Player Performance](#player-performance)
 -   [Draft Results](#draft-results)
 -   [Draft Valuation](#draft-valuation)
 -   [Re-Drafting](#re-drafting)
-
-I've been commish in this league for a while now. We've tested about everything from different engines, to different rules, etc. Earlier in the year, my league had a discussion about re-evaluating our draft and looking for high value players.
 
 ## Player Performance
 

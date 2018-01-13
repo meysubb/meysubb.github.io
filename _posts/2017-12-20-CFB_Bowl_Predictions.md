@@ -5,15 +5,18 @@ description: "CFB Bowl Predictions"
 category: sports analytics
 tags: [college football, R, python, college sports]
 comments: false
+excerpt_separator: <!--more-->
 ---
+
+Last year at work, I was part of the college bowl pick'em. Nothing new, I used to do the CFB bowl pick'ems with my college roommates and others. But last year, I decided to scrape the data and use different Machine Learning (ML) algorithms to predict winners.
+
+Note: I treated this as a classification problem, 1 - Win, 0 - Lose. For those curious about the ML algorithms and the parameters selected, there is a follow-up post.
+
+<!--more-->
 
 -   [Bowl Predictions](#bowl-predictions)
 -   [Algorithm 1 - Random Forest vs. Algorithm 2 - XGboost](#algorithm-1---random-forest-vs.-algorithm-2---xgboost)
 -   [Predictions](#predictions)
-
-Last year at work, I was part of the college bowl pick'em. Nothing new, I used to do the CFB bowl pick'ems with my college roommates and others. But last year, I decided to scrape the data and use different Machine Learning (ML) algorithms to predict winners.
-
-Note: I treated this as a classification problem, 1 - Win, 0 - Lose. For those curious about the ML algorithms and the parameters selected, I'll be writing up a follow-up post. Should be out soon.
 
 Bowl Predictions
 ----------------
@@ -51,7 +54,7 @@ Let's see what we've got here.
 
 Before we dive into this, the models were run to classify/predict whether the home team wins. Above we see the top 10 stats that each model thinks is important to predict home team wins. They both tend to cover the same spectrum, interestingly enough XGB doesn't consider the home\_turnover\_margin in the top 10 variables.
 
-I'd say overall, it tends to do a good job since it captures **(1) turnovers, (2) offensive capabillity, (3) special teams (field position), and (4) clutch conversions (third down %)**. You can also argue/point out that it captures defense since turnovers and the number of total yards the other team gains.
+I'd say overall, it tends to do a good job since it captures **(1) turnovers, (2) offensive capability, (3) special teams (field position), and (4) clutch conversions (third down %)**. You can also argue/point out that it captures defense since turnovers and the number of total yards the other team gains.
 
 For Support Vector Machines (Algorithm 3 - SVM), they are a bit more complex, and hence don't provide straight forward variable importances. If you want some more detail on this, look for the follow up post.
 
@@ -1183,8 +1186,8 @@ Final Results
 
 Algorithm 1 - 16/37 = 43.2%   
 Algorithm 2 - 21/37 = 56.7%   
-Algorithm 3 - 15/37 = 43.2%   
+Algorithm 3 - 15/37 = 40.5%   
 
 None of these are truly fantastic. I would like to break the 60% threshold. Just like last year, there's a lot left to learn going forward. I'll take a stab at this again for the 2018 bowl season. So long folks!
 
-Congrats to Alabama! TUAAAAAAAA! 
+Congrats to Alabama! TUAAAAAAAA!

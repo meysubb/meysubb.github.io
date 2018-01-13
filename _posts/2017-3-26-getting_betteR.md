@@ -5,8 +5,21 @@ description: "R tips and tricks"
 category: rstats
 tags: [R]
 comments: false
+excerpt_separator: <!--more-->
 ---
 
+
+I started using R about a year and a half ago at my summer internship with PNNL, also my current employer. Note: Opinions expressed are solely my own and do not express the views or opinions of my employer.
+
+That paved the way for me to use R for my master's thesis. Now, I use R for a variety of things. I use python as well, mostly for web scraping currently. Hopefully, that'll change. But this is more about the evolution of my R knowledge. So let's get to it.
+
+<!--more-->
+
+For the past two years, I've created an NCAA stat visualizer. (In the near future I will try to provide predictions for any potential match-up.) The stat visualizer has been handy when filling out brackets. One of the most time intensive processes in this yearly project, is data cleaning and manipulation.
+
+I'll highlight a handful of useful R tips including, **proper list usage, vectorization, tidyverse libraries, and foreach parallelization**. I picked these specific topics, as that's what I've found myself using often when coding in R.
+
+Note: The scraped data has four different csvs, individual game (team and player), overall (team and player) data.
 
 -   [List Usage](#list-usage)
 -   [Vectors](#vectors)
@@ -17,20 +30,10 @@ comments: false
 -   [Parallel Processing](#parallel-processing)
 -   [TLDR](#tldr)
 
-I started using R about a year and a half ago at my summer internship with PNNL, also my current employer. Note: Opinions expressed are solely my own and do not express the views or opinions of my employer.
-
-That paved the way for me to use R for my master's thesis. Now, I use R for a variety of things. I use python as well, mostly for web scraping currently. Hopefully, that'll change. But this is more about the evolution of my R knowledge. So let's get to it.
-
-For the past two years, I've created an NCAA stat visualizer. (In the near future I will try to provide predictions for any potential match-up.) The stat visualizer has been handy when filling out brackets. One of the most time intensive processes in this yearly project, is data cleaning and manipulation.
-
-I'll highlight a handful of useful R tips including, **proper list usage, vectorization, tidyverse libraries, and foreach parallelization**. I picked these specific topics, as that's what I've found myself using often when coding in R.
-
-Note: The scraped data has four different csvs, individual game (team and player), overall (team and player) data.
-
 List Usage
 ----------
 
-Let's start with the proper list usage. Lately, I've become a firm believer in using lists when appropriate. The example shown below reads in multiple csvs into a list, and then separate that list into individual data-frames. 
+Let's start with the proper list usage. Lately, I've become a firm believer in using lists when appropriate. The example shown below reads in multiple csvs into a list, and then separate that list into individual data-frames.
 
 I would've liked to benchmark this better, but for now I'm just going to time both options.
 
@@ -43,7 +46,7 @@ ind.player <- read.csv(file="data/player_data.tsv", sep="\t", header=TRUE, row.n
 proc.time() - ptm
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ##   1.272   0.008   1.281
 
 Let's take a look at loading all of the csvs into one list.
@@ -64,20 +67,20 @@ list2env(my.data,.GlobalEnv)
 proc.time() - ptm
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ##   1.096   0.012   1.110
 
 In this scenario, there is little to no difference in the two options (time-wise). You can load the data any way you want. I prefer the second option, much less typing. :)
 
-Note: The main advantage of a list is that it can be a collection of varying different elements. For example, a list could store two different dataframes and a vector (with differing structures). Lists are vectors in R. However, Lists are recursive in nature while vectors are not. "Recursive" here refers to the fact that it can contain values of different types, lengths, etc. 
- 
+Note: The main advantage of a list is that it can be a collection of varying different elements. For example, a list could store two different dataframes and a vector (with differing structures). Lists are vectors in R. However, Lists are recursive in nature while vectors are not. "Recursive" here refers to the fact that it can contain values of different types, lengths, etc.
+
 If you are new to R and trying to learn how the different data types work, here are a few links.
-[Impatient R](http://www.burns-stat.com/documents/tutorials/impatient-r/) 
+[Impatient R](http://www.burns-stat.com/documents/tutorials/impatient-r/)
 [Tutorials Point](https://www.tutorialspoint.com/r/r_data_types.htm)
 [Stat Methods](http://www.statmethods.net/input/datatypes.html)
 [SO #1](http://stackoverflow.com/questions/8594814/what-are-the-differences-between-r-vector-and-r-list-data-types)
 
-Per the request of a friend, I'll follow up with an article focusing on the R data types. 
+Per the request of a friend, I'll follow up with an article focusing on the R data types.
 
 Vectors
 -------
@@ -98,7 +101,7 @@ mbm = microbenchmark(
 )
 autoplot(mbm)
 ```
-![_config.yml]({{ site.baseurl }}/images/not_vector-1.png)
+![_config.yml]({{ site.baseurl }}/images/getting_betteR/not_vector-1.png)
 
 Well, now that I (formally) know that R is a vector based language this piece of code is accomplished quickly. (Note, the sapply loop is the old method (not-vectorized) fashion of appending text.) Instead of searching and appending "team\_" to each stat via a loop, the paste0 function takes care of it. For further details on vectorization, take a look [here](http://www.noamross.net/blog/2014/4/16/vectorization-in-r--why.html)
 
@@ -107,9 +110,9 @@ Alright, lets move forth to the TIDYVERSE! Yep, the more and more I browse stack
 Tidyverse
 ---------
 
-The tidyverse is a collection of R packages that share common philosophies and are designed to work together, engineered by Hadley Wickham and co. For documentation, go to <http://tidyverse.org/>. Dplyr is a tidyverse package. 
+The tidyverse is a collection of R packages that share common philosophies and are designed to work together, engineered by Hadley Wickham and co. For documentation, go to <http://tidyverse.org/>. Dplyr is a tidyverse package.
 
-Looking through the data, there are additional columns that need to be created to determine stat percentages among other things. Originally, I didn't use good programming practice. 
+Looking through the data, there are additional columns that need to be created to determine stat percentages among other things. Originally, I didn't use good programming practice.
 
 #### Base R - Column adds
 
@@ -128,7 +131,7 @@ ind.game$home_team_ftpct <- ind.game$home_team_ft/ind.game$home_team_fta
 proc.time() - ptm
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ##   0.008   0.000   0.008
 
 #### tidyverse - Column adds
@@ -147,10 +150,10 @@ ind.game <- ind.game %>% mutate(
 proc.time() - ptm
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ##   0.004   0.000   0.006
 
-When it comes to making new columns. There is no real advantage whether you use base R or tidyverse for this. However, I would argue that it is good programming practice to rely on the using mutate (dplyr) or with (base) when trying to create multiple columns. The with function is helpful as it doesn't force you to keep referencing data.frame$'column name' repeatedly, as seen above. 
+When it comes to making new columns. There is no real advantage whether you use base R or tidyverse for this. However, I would argue that it is good programming practice to rely on the using mutate (dplyr) or with (base) when trying to create multiple columns. The with function is helpful as it doesn't force you to keep referencing data.frame$'column name' repeatedly, as seen above.
 
 Here shortly you should see the advantage of using the tidyverse with some of the more complex situations.
 
@@ -173,7 +176,7 @@ dplyr = ind.player %>%  group_by(player_name)  %>% summarise(PF = sum(fouls,na.r
 autoplot(tv_mbm)
 ```
 
-![_config.yml]({{ site.baseurl }}/images/agg_PF-1.png)
+![_config.yml]({{ site.baseurl }}/images/getting_betteR/agg_PF-1.png)
 
 Well, the tidyverse approach is **much** quicker. Good to know that things are moving along in the right direction.
 
@@ -246,19 +249,19 @@ stopCluster(cl)
 ```
 
 ``` r
-## Regular Code 
+## Regular Code
 n_prl_time
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ## 979.632   0.128 979.957
 
 ``` r
-## Parallel Code 
+## Parallel Code
 par_time
 ```
 
-    ##    user  system elapsed 
+    ##    user  system elapsed
     ##   0.216   0.008 574.619
 
 ``` r
@@ -266,7 +269,7 @@ par_time
 n_prl_time[3]/par_time[3]
 ```
 
-    ##  elapsed 
+    ##  elapsed
     ## 1.705403
 
 For a little insight on the three different times shown, I went to the [documentation for proc.time](https://stat.ethz.ch/R-manual/R-devel/library/base/html/proc.time.html).
