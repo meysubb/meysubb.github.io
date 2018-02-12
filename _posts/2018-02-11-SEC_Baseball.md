@@ -81,7 +81,7 @@ Plate Discipline
 
 Plate Discipline normally refers to hitters and looks at their K% vs BB%. This helps identify the smart hitters. We will take the opportunity to also look at it for pitchers. This should show how effective and sometimes how patient pitchers are.
 
-![_config.yml]({{ site.baseurl }}//images/SEC_BB/plate_disc.png)
+![_config.yml]({{ site.baseurl }}/images/SEC_BB/plate_disc.png)
 
 The bottom right corner, on the left plot, shows the most disciplined hitters in the league. The top left corner, on the right plot, shows the most effective pitchers in the league.
 
