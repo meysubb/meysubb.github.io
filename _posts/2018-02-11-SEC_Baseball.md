@@ -39,7 +39,7 @@ Team Hitting
 
 The last couple of years has shown that the SEC has some very capable bats, as well as arms (Vandy) but we will get to that later. Let's take a look at some numbers below to get a better sense of how teams are scoring.
 
-![_config.yml]({{ site.baseurl }}/images/SEC_BB/team_offense.png")
+![_config.yml]({{ site.baseurl }}/images/SEC_BB/team_offense.png)
 
 The left side takes a deeper look into whether teams are punching runs through methodically (runners on base, Sac Fly, etc) or just knocking it out of the park. To go along with this, the hit distribution for each time can be seen on the right.
 
@@ -52,7 +52,7 @@ Team Pitching
 
 The graph below should be indicative of which class year most innings are coming from for each individual team.
 
-![_config.yml]({{ site.baseurl }}/images/SEC_BB/pit_dist.png")
+![_config.yml]({{ site.baseurl }}/images/SEC_BB/pit_dist.png)
 
 
 Veteran Staffs: TAMU, Mizzou, Bama, and South Carolina
@@ -66,7 +66,7 @@ Individual Hitting
 
 We'll look at the top returning hitters. Most players are eligible for the draft at the completion of their junior year. It seems that more hitters tend to leave their Jr year.
 
-![_config.yml]({{ site.baseurl }}/images/SEC_BB/rolling_plot.png")
+![_config.yml]({{ site.baseurl }}/images/SEC_BB/rolling_plot.png)
 
 I've recently become a fan of rolling average plots. The plot on the left looks at streaky-ness for players on a rolling BA for 3 games. 3-games seemed appropriate since that would highlight whether a player had a big series against one team or another. The dashed line is the batting average over the course of the year for each player. Use this as a measuring stick on how the player is performing. The maroon vertical lines on the x-axis are where players had 1-hit games.
 
@@ -81,7 +81,7 @@ Plate Discipline
 
 Plate Discipline normally refers to hitters and looks at their K% vs BB%. This helps identify the smart hitters. We will take the opportunity to also look at it for pitchers. This should show how effective and sometimes how patient pitchers are.
 
-![_config.yml]({{ site.baseurl }}//images/SEC_BB/plate_disc.png")
+![_config.yml]({{ site.baseurl }}//images/SEC_BB/plate_disc.png)
 
 The bottom right corner, on the left plot, shows the most disciplined hitters in the league. The top left corner, on the right plot, shows the most effective pitchers in the league.
 
