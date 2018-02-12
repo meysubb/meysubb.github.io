@@ -15,7 +15,16 @@ With College baseball season about 6 days away, it's time to recap last year and
 Expected W-L
 ------------
 
-![_config.yml]({{ site.baseurl }}/images/SEC_BB/record_plots.png)
+<iframe class="huge" src="/images/SEC_BB/record_plots.png"
+    style="max-width = 100%"
+    sandbox="allow-same-origin allow-scripts"
+    width="150%"
+    height="600"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
 
 The graph on the left hand side, compares the Pythagorean expectation to their actual win percentage. Teams above the diagonal have performed worse than expected and below the diagonal performed better than expected. The [Pythagorean expecation](https://www.fangraphs.com/library/principles/expected-wins-and-losses/) is solely based on Runs Scored and Runs allowed.
 
