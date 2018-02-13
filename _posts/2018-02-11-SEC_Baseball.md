@@ -89,4 +89,30 @@ Pitchers want to have high K rates and low BB rates, while hitters want the exac
 
 Well that wraps it up. Look for some future posts using last seasons data. I'm trying to create a random effects model to look at the talent distribution for returning hitters in the SEC. Anyways, can't wait for the season to start on Friday!
 
+## Interactive record_plots
+
+A few people have requested the ability to interactive with the plate discipline plots. Here you go.
+
+<iframe class="huge" src="/images/SEC_BB/hc_hit.html"
+    style="max-width = 100%"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="600"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+<iframe class="huge" src="/images/SEC_BB/hc_pit.html"
+    style="max-width = 100%"
+    sandbox="allow-same-origin allow-scripts"
+    width="100%"
+    height="600"
+    scrolling="no"
+    seamless="seamless"
+    frameborder="0">
+</iframe>
+
+
+
 If you want to take a look at the data or code, take a look at this github link. If you have any questions feel free to reach out @msubbaiah1.
