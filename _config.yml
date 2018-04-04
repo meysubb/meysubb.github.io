@@ -42,6 +42,7 @@ nav:
     - '/blog/'
     - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
+    - { TIL : 'https://meysubb.github.io/TIL/'}
   About:
     - '/about/'
     - { Resume: 'https://meysubb.github.io/online-resume/'}
