@@ -43,6 +43,8 @@ nav:
     - { Categories: '/blog/categories/' }
     - { Tags: '/blog/tags/' }
     - { TIL : 'https://meysubb.github.io/TIL/'}
+  Projects:
+    - { collegeballR : 'https://meysubb.github.io/collegeballR'}
   About:
     - '/about/'
     - { Resume: 'https://meysubb.github.io/online-resume/'}
