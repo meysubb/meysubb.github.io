@@ -9,8 +9,8 @@ excerpt_separator: <!--more-->
 ---
 
 With the start of CBB season last week, the SB Nation blog covering
-Mid-Majors (Mid-Major Madness) introduced a new fantasy game, Mid-Major
-Stock Exchange. The premise, similar to the stock market, is to create a
+Mid-Majors (Mid-Major Madness) introduced a new fantasy game, [Mid-Major
+Stock Exchange](https://www.midmajormadness.com/2018/11/6/18068346/welcome-to-the-mid-major-madness-stock-exchange-college-basketball-stock-game). The premise, similar to the stock market, is to create a
 portfolio with $500.
 
 I’ll be honest, I don’t watch a lot of mid-major basketball. Mostly just
@@ -132,7 +132,7 @@ matrix is used as the main objective function in the integer program.
 Finally to the good stuff. How do I go about allocating which teams to
 submit in my portfolio. Linear programs focus on maximizing or minimizing an objective function
 with a set of constraints. It solves for optimal values of the variables such that the objective function is
-maximized, in this case. 
+maximized, in this case.
 
 The objective function here is to be maximized based on the estimated
 median returns found earlier. The first constraint is to ensure that the
