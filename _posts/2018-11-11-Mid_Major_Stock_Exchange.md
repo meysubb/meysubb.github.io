@@ -204,11 +204,6 @@ print(get.objective(fund_allocate))
 ``` r
 solution = get.variables(fund_allocate)
 
-### the expected returns
-### format print the teams to choose
-### format the cost of each team
-### format the final cost
-
 names <- yNames[which(solution!=0)]
 shares <- solution[which(solution!=0)]
 cost <- costs[which(solution!=0)]
