@@ -19,6 +19,8 @@ chance to flex Linear and Integer Programming. Linear and Integer
 Programming is used in many industries to focus on resource allocation,
 the goal is to find optimal solutions.
 
+<!--more-->
+
 In my case, I wanted to optimize returns on mid-major teams. Here is
 where I encountered the first problem, this is the pre-season and we
 have not had any games (or previous history in the game) to identify
