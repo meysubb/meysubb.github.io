@@ -23,7 +23,7 @@ the goal is to find optimal solutions.
 
 In my case, I wanted to optimize returns on mid-major teams. Here is
 where I encountered the first problem, this is the pre-season and we
-have not had any games (or previous history in the game) to identify
+have not had any games (or previous history in this game) to identify
 returns. However, if I can correlate team rankings (created from
 analytics methods) with the cost set it’s possible to estimate potential
 returns.
@@ -130,8 +130,9 @@ matrix is used as the main objective function in the integer program.
 ### Linear/Integer Programming
 
 Finally to the good stuff. How do I go about allocating which teams to
-submit in my portfolio. Linear programs focus on an objective function
-with a set of constraints.
+submit in my portfolio. Linear programs focus on maximizing or minimizing an objective function
+with a set of constraints. It solves for optimal values of the variables such that the objective function is
+maximized, in this case. 
 
 The objective function here is to be maximized based on the estimated
 median returns found earlier. The first constraint is to ensure that the
@@ -250,4 +251,4 @@ Here is the suggestion on who to invest in for my diverse portfolio.
 | wagner                 |      1 | 21.71 |       21.71 |
 
 
-Full code can be found (here)[https://github.com/meysubb/NCAAB_projects/tree/master/Mid-Major-xchange]. 
+Full code can be found [here](https://github.com/meysubb/NCAAB_projects/tree/master/Mid-Major-xchange).
