@@ -248,3 +248,6 @@ Here is the suggestion on who to invest in for my diverse portfolio.
 | texas san antonio      |      1 | 24.48 |       24.48 |
 | vcu                    |      1 | 27.77 |       27.77 |
 | wagner                 |      1 | 21.71 |       21.71 |
+
+
+Full code can be found (here)[https://github.com/meysubb/NCAAB_projects/tree/master/Mid-Major-xchange]. 
