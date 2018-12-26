@@ -44,6 +44,7 @@ nav:
     - { Tags: '/blog/tags/' }
     - { TIL : 'https://meysubb.github.io/TIL/'}
     - { collegeballR : 'https://meysubb.github.io/collegeballR'}
+    - { FFL : 'https://meysubb.github.io/FFF-pages/}
   About:
     - '/about/'
     - { Resume: 'https://meysubb.github.io/online-resume/'}
